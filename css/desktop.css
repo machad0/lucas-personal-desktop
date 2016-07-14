@@ -196,8 +196,8 @@ img.weblogo {
 }
 
 .right-corner img {
-    width: 33%;
-    height: auto;
+    width: 33%!important;
+    height: auto!important;
     /*float: right!important;*/
 }
 .daguru{
@@ -506,7 +506,7 @@ hr.divider {
      
     }
     .right-corner-windowed img {
-        width: 60%;
+        width: 60%!important;
     }
     .social-media{
        
