@@ -1,0 +1,77 @@
+html {
+    background-color: #008080!important;
+    font-family: "Microsoft Sans Serif";
+    overflow: hidden;
+}
+#init-bar {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 26px;
+    width: 100%;
+    background: silver;
+    position: fixed;
+    border: 1px solid white;
+    display: inline-block;
+    border: 1px;
+}
+input.toggle {
+    display: none;
+}
+input.toggle ~ div.content {
+    width: 200px;
+    height: 200px;
+    bottom: 24px;
+    display: none;
+    margin: .2rem;
+    overflow: hidden;
+    position: absolute;
+    background-color: #C0C0C0;
+}
+#init-bar label {
+    display: block;
+    width: 70px;
+    max-width: 70px;
+    height: 25px;
+    background-color: #C0C0C0;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px ridge black;
+    border-right: 2px ridge black;
+    position: relative;
+    font-weight: bold;
+    font-size: 12pt;
+    box-sizing: border-box;
+    text-align: center;
+}
+input.toggle:checked ~ div.content {
+    display: block;
+}
+.depressed {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: inset 1px 1px gray, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
+}
+input.toggle:checked + label {
+    border-top: 2px groove #808080 !important;
+    border-left: 2px groove #808080 !important;
+    border-bottom: 2px groove #FFFFFF !important;
+    border-right: 2px groove #FFFFFF !important;
+}
+.tray {
+    width: 110px;
+    height: 25px;
+    z-index: 999;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.tray-ordr {
+    display: inline-block;
+    position: relative;
+}
+.icon-mini {
+    width: 10px;
+}

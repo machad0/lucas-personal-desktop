@@ -1,0 +1,920 @@
+#ballWrapper {
+    width: 140px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 5s linear 0s;
+    -moz-transition: all 5s linear 0s;
+    transition: all 5s linear 0s;
+    cursor: pointer;
+}
+#ballWrapper2 {
+    top: 70%;
+    position: absolute;
+}
+.smile {
+    width:90%
+}
+.spoken1 {} .ball2 {
+    display: none;
+}
+#ball {
+    background-size: 120px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 70px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    -webkit-animation: jump 1s infinite;
+    -moz-animation: jump 1s infinite;
+    -o-animation: jump 1s infinite;
+    -ms-animation: jump 1s infinite;
+    animation: jump 1s infinite;
+    cursor: pointer;
+}
+#ball2:after,
+#ball::after {
+    content: " ";
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    border-radius: 40px / 20px;
+}
+#ball2 {
+    background-size: 120px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 70px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    -webkit-animation: roll 5s infinite, moveright 5s forwards;
+    -moz-animation: roll 5s infinite, moveright 5s forwards;
+    -o-animation: roll 5s infinite, moveright 5s forwards;
+    -ms-animation: roll 5s infinite, moveright 5s forwards;
+    animation: roll 5s forwards, moveright 5s forwards;
+    cursor: pointer;
+}
+.show-box {
+    animation: show 5s;
+    display: block!important;
+}
+.hideball2,
+.hideball {
+    display: none!important;
+}
+.showball {
+    display: block;
+    animation: showb 2s;
+}
+.ich {
+    animation: roll 1s steps(70) infinite;
+}
+.speech {
+    background: #fff;
+    border-radius: 20px;
+    border-style: dotted;
+    display: block;
+    width: 100px;
+    margin: -60px -50px 10px;
+}
+.speech::after {
+    content: '';
+    position: absolute;
+    border-style: dotted;
+    border-width: 15px 15px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    z-index: 1;
+    bottom: 295px;
+    left: -10px;
+}
+.speech3 {
+    opacity: 0;
+}
+.showspeech3 {
+    vertical-align: middle;
+    font-weight: 300;
+    color: #fff;
+    background: #000;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    margin: 70px 480px;
+    animation: showspeech2 1s 3s forwards;
+}
+.showspeech3:after {
+    background-color: #000;
+    color: #fff;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.90);
+}
+@keyframes showspeech2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Animations */
+
+@-webkit-keyframes jump {
+ 0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 60px;
+        height: 60px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80px;
+        height: 60px;
+        border-radius: 70px / 60px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        top: 40px;
+        height: 60px;
+        border-radius: 70px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}
+@-moz-keyframes jump {
+ 0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 60px;
+        height: 60px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80px;
+        height: 60px;
+        border-radius: 70px / 60px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        top: 40px;
+        height: 60px;
+        border-radius: 70px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}
+@-o-keyframes jump {
+ 0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 60px;
+        height: 60px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80px;
+        height: 60px;
+        border-radius: 70px / 60px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        top: 40px;
+        height: 60px;
+        border-radius: 70px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}
+@-ms-keyframes jump {
+ 0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 60px;
+        height: 60px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80px;
+        height: 60px;
+        border-radius: 70px / 60px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        top: 40px;
+        height: 60px;
+        border-radius: 70px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 60px;
+        height: 60px;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80px;
+        height: 60px;
+        border-radius: 70px / 60px;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        top: 40px;
+        height: 60px;
+        border-radius: 70px;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}                        
+                /*show*/
+@-webkit-keyframes show{
+    0% {
+        width: 0px;
+        display: block;
+    }
+    50% {
+        width: 10%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        width: 20%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        width: 30%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        width: 45%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    85% {
+        width: 55%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        width: 70%%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 60%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+}
+@-moz-keyframes show{
+    0% {
+        width: 0px;
+        display: block;
+    }
+    50% {
+        width: 10%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        width: 20%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        width: 30%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        width: 45%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    85% {
+        width: 55%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        width: 70%%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 60%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+}
+@-o-keyframes show{
+    0% {
+        width: 0px;
+        display: block;
+    }
+    50% {
+        width: 10%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        width: 20%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        width: 30%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        width: 45%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    85% {
+        width: 55%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        width: 70%%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 60%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+}
+@-ms-keyframes show{
+    0% {
+        width: 0px;
+        display: block;
+    }
+    50% {
+        width: 10%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        width: 20%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        width: 30%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        width: 45%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    85% {
+        width: 55%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        width: 70%%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 60%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+}
+@keyframes show {
+    0% {
+        width: 0px;
+        display: block;
+    }
+    50% {
+        width: 10%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    55% {
+        width: 20%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        width: 30%;
+        display: block;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        width: 45%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    85% {
+        width: 55%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        width: 70%%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 60%;
+        display: block;
+        animation-timing-function: ease-in;
+    }
+}
+@-webkit-keyframes showb {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes showb {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+@-o-keyframes showb {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+@-ms-keyframes showb {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+@keyframes showb {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes moveright {
+    from {
+        left: 0;
+    }
+    to {
+        left: 500px;
+    }
+}
+@media screen and (min-width: 1324px) {
+    #ballWrapper {
+        width: 140px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -70px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 5s linear 0s;
+        -moz-transition: all 5s linear 0s;
+        transition: all 5s linear 0s;
+        cursor: pointer;
+    }
+    #ballWrapper2 {
+        top: 70%;
+        position: absolute;
+    }
+    .smile {
+        width: 90%
+    }
+    .ball2 {
+        display: none;
+    }
+    #ball {
+        background-size: 120px;
+        background-position: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        background: yellow;
+        position: absolute;
+        top: 0;
+        -webkit-animation: jump-resṕ 1s infinite;
+        -moz-animation: jump-resṕ 1s infinite;
+        -o-animation: jump-resṕ 1s infinite;
+        -ms-animation: jump-resṕ 1s infinite;
+        animation: jump-resṕ 1s infinite;
+        cursor: pointer;
+    }
+    #ball2:after,
+    #ball::after {
+        content: " ";
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        border-radius: 40px / 20px;
+    }
+    #ball2 {
+        background-size: 120px;
+        background-position: center;
+        width: 80PX;
+        height: 80px;
+        border-radius: 70px;
+        background: yellow;
+        position: absolute;
+        top: 0;
+        -webkit-animation: roll 5s infinite, moveright 5s forwards;
+        -moz-animation: roll 5s infinite, moveright 5s forwards;
+        -o-animation: roll 5s infinite, moveright 5s forwards;
+        -ms-animation: roll 5s infinite, moveright 5s forwards;
+        animation: roll 5s forwards, moveright 5s forwards;
+        cursor: pointer;
+    }
+    .show-box {
+        animation: show 5s;
+        display: block!important;
+    }
+    .hideball2,
+    .hideball {
+        display: none!important;
+    }
+    .showball {
+        display: block;
+        animation: showb 2s;
+    }
+    .ich {
+        animation: roll 1s steps(70) infinite;
+    }
+    .speech {
+        background: #fff;
+        border-radius: 20px;
+        border-style: dotted;
+        display: block;
+        width: 200px;
+        font-size: 25px;
+        margin: -60px -50px 10px;
+    }
+    .speech::after {
+        content: '';
+        position: absolute;
+        border-style: dotted;
+        border-width: 15px 15px 0;
+        border-color: #FFFFFF transparent;
+        display: block;
+        z-index: 1;
+        bottom: 282px;
+        left: -10px;
+    }
+    .speech3 {
+        opacity: 0;
+    }
+    .showspeech3 {
+        vertical-align: middle;
+        font-weight: 300;
+        color: #fff;
+        background: #000;
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        margin: 100px 500px;
+        animation: showspeech2 1s 3s forwards;
+        font-size: 25px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.90);
+    }
+    .showspeech3:after {
+        background-color: #000;
+        color: #fff;
+    }
+    /* Animations Responsive ver 2 */
+    
+@-webkit-keyframes jump-resṕ {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 80px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 80px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 80px;
+            border-radius: 100px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-moz-keyframes jump-resṕ {
+         0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 80px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 80px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 80px;
+            border-radius: 100px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-o-keyframes jump-resṕ {
+         0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 80px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 80px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 80px;
+            border-radius: 100px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-ms-keyframes jump-resṕ {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 80px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 80px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 80px;
+            border-radius: 100px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+    @keyframes jump-resṕ {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 80px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 80px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 80px;
+            border-radius: 100px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+    @keyframes show {
+        0% {
+            width: 0px;
+            display: block;
+        }
+        50% {
+            width: 10%;
+            display: block;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            width: 20%;
+            display: block;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            width: 30%;
+            display: block;
+            animation-timing-function: ease-out;
+        }
+        75% {
+            width: 45%;
+            display: block;
+            animation-timing-function: ease-in;
+        }
+        85% {
+            width: 55%;
+            display: block;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            width: 70%%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            width: 60%;
+            display: block;
+            animation-timing-function: ease-in;
+        }
+    }
+    @keyframes showb {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
+        }
+    }
+    @keyframes roll {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes moveright {
+        from {
+            left: 0;
+        }
+        to {
+            left: 500px;
+        }
+    }
+}

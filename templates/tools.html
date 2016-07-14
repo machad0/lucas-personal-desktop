@@ -1,0 +1,36 @@
+<div id="window-tools" class="tools-window window-border open-readme drag">
+    <header class="window-header" style="display:block;">
+        <img class="window-icon" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1">
+        <span class="window-title text-form">{{tools.title}}{{skills.title}}</span>
+        <div class="action_btn">
+
+            <button ng-click="closeme()" class="form_btn close-win"></button>
+        </div>
+    </header>
+
+    <section class="folder-body">
+
+        <div class="text-body border-deep">
+            <h2 class="subtitle-tools">USED TOOLS</h2>
+            <hr>
+            <img class="pc-tools" width="150px" src="/assets/pc.png">
+
+            <ul class="tools-list">
+
+                <li>Experience with the webservers: Apache, Ngnix and IIS;</li><br>
+                <li>DBMS’s like mySQL WorkBench e PostgreSQL;</li><br>
+                <li>Experience with the mobile applications development frameworks Apache Cordova and Ionic;</li><br>
+                <li>IDEs and Editors: SublimeText 2, Brackets, Atom, VisualStudio, Eclipse, NetBeans, CodeBlocks, Geany, Emacs and Arduino Software;</li><br>
+                <li>Unix operational systems - Debian, Ubuntu, CentOS – and Windows;</li><br>
+                <li>Github and bitbucket for versioning;</li><br>
+                <li>Microsoft Office – Excel, Word, PowerPoint, Visio - and LibreOffice tools;</li>
+            </ul>
+
+        </div>
+    </section>
+</div>
+<script>
+    jQuery('#tools-exp').click(function() {
+        jQuery(this).toggleClass('active');
+    });
+</script>

@@ -1,0 +1,94 @@
+.icon-readme {
+    background-position: -50px 0px;
+}
+.icon-skills {
+    background-position: 192px 35px;
+}
+.icon-tools {
+    background-position: -1111px 40px;
+}
+.icon-education {
+    background-position: 89px -165px;
+}
+.icon-experience {
+    background-position: -257px 35px;
+}
+.icon-projects {
+    background-position: -165px 1px;
+}
+.icon-langs {
+    background-position: -50px -85px;
+}
+.icon-social {
+    background-position: 41px -80px;
+}
+.icon-guru {
+    background: url("/assets/guruicon.png") no-repeat!important;
+    background-position: -4px -1px!important;
+    background-size: 50px!important
+}
+#dsktp-icons {
+    height: 100%;
+    width: 100%;    
+}
+
+.form_btn {
+    cursor: pointer;
+}
+#dsktp-icons>.icon-title span {
+    color: #fff;
+    text-shadow: 0 1px #000;
+    font-size: 0.8em;
+}
+.tab_icon {
+    font-size: 100%;
+    line-height: auto;
+    font-family: inherit;
+    white-space: normal;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px 2px;
+    vertical-align: top;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/icons.png");
+    align-content: center;
+    background-size: 600px;
+}
+.tab_icon>.icon {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 3px;
+}
+.tab_icon:focus {
+    outline-color: #000;
+    outline-style: dotted;
+    outline-width: 1px;
+    outline-offset: 1px;
+}
+.tab_icon>span {
+    display: block;
+    overflow: ;
+    text-overflow: ellipsis;
+    word-wrap: nowrap;
+    width: 70px;
+    max-width: 75px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+.icon-mini {
+    width: 10px;
+}
+.mini-win {
+    background-image: url("/assets/minimize.png")
+}
+.maxi-win {
+    background-image: url("/assets/maximize.png");
+}
+.close-win {
+    background-image: url("/assets/close.png");
+}

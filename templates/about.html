@@ -1,0 +1,101 @@
+<div class="draggy">
+<div id="window-aboutme" class="window-form-browser window-border" ng-class="classMaxi">
+    <header class="window-header" style="display:block;">
+        <img class="window-icon" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1">
+        <span class="window-title text-form"></span>
+        <div class="action_btn">
+            <button ng-click="" class="form_btn mini-win"></button>
+            <button id="maxbtn" ng-click="changeClass()" class="form_btn maxi-win"></button>
+            <button ng-click="closeme()" class="form_btn close-win"></button>
+        </div>
+
+    </header>
+    <div class="url-title"><label>Address</label><input type="submit" class="url" value="c/:home/lucas/desktop/aboutme.html" disabled></div>
+    <section class="folder-body">
+        <div class="text-body border-deep">
+            <div class="logo">
+                <img class="weblogo" align="center" src="/assets/weblogo.gif">
+            </div>
+            <div id="" style="width:;" class="right-corner"><img id="head" class="ich" src="/assets/me.png"></div>
+            <div style="left-corner">
+  
+                <ul class="social-media">
+                    <li class="fb social"><a href="https://www.facebook.com/lucas.omachado" target="_blank">Facebook</a></li>
+                    <li class="lkdn social">LinkedIn</li>
+                    <li class="cv social">Curriculum Vitae</li>
+                    <li class="bhance social">Behance</li>
+                    <li class="github social">GitHub</li>
+                    <li class="flkr social">Flickr</li>
+                </ul>
+            </div>
+            <div class="body-browser">
+
+
+
+                <div class="ball1" id="ballWrapper">
+                    <div id="ball"><img class="smile" src="/assets/smile.png"></div>
+                    <div class="speech">Hey! Click me to see some cool stuff</div>
+                </div>
+                <div class="box1">
+                    <p class="first">Hello! Thanks for stopping by. This is my brand new personal website, inspired by the best of the 90's brutalist web-art!</p>
+                </div>
+                <div class="ball2" id="ballWrapper2">
+                    <div id="ball2"><img class="smile" src="/assets/smile.png"></div>
+                    <div class="speech3">Click Me!</div>
+                </div>
+                <div class="box2">
+                    <p class="second">I'm a developer focused on web and mobile applications. Passionate about creating interfaces and applications for web. Working as developer at the last five years, never stopped learn and doesn't intend to. Looking forward for new experiences, in different places, with capable people. Out of obvious, always. </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+            </div>
+    <script>
+
+        $("#ballWrapper").click(function() {
+            $('.box1').toggleClass('show-box');
+            $('.ball1').toggleClass('hideball');
+            $('.ball2').toggleClass('showball');
+            $('.speech2').toggleClass('showspeech2');
+            $('.speech3').toggleClass('showspeech3');
+        });
+        $("#ball2").click(function() {
+            $('.box2').toggleClass('show-box');
+            $('.ball2').toggleClass('hideball2');
+        });
+
+        $("#maxbtn").click(function() {
+            $('.ich').toggleClass('dragme');
+            $('.body-browser').toggleClass('windowed-browser');
+            $('.box1').toggleClass('windowed-boxes');
+            $('.box2').toggleClass('windowed-boxes');
+            $('.social').toggleClass('social-windowed');
+            $('.social-media').toggleClass('social-media-windowed');
+            $('.right-corner').toggleClass('right-corner-windowed');
+            $(".dragme").draggable({
+                revert: function(dropped) {
+                    var $draggable = $(this),
+                        hasBeenDroppedBefore = $draggable.data('hasBeenDropped'),
+                        wasJustDropped = dropped && dropped[0].id == "droppable";
+                    if (wasJustDropped) {
+                        return false;
+                    } else {
+                        if (hasBeenDroppedBefore) {
+                            $draggable.animate({
+                                top: 0,
+                                left: 0
+                            }, 'slow');
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>

@@ -1,0 +1,251 @@
+.max-win {
+    min-height: 93vh;
+    min-width: 100vw;
+    overflow: hidden;
+    
+}
+.unmax-win {
+    top: 0px!important;
+    left: 0px!important;
+    margin: 0px!important;
+}
+.changePosition {
+    top: 0px!important;
+    left: 0px!important;
+    margin: -270px -85px;
+
+}
+.natural{
+    top: 0px;
+    left: 0px;
+    margin: 0px!important;
+    
+}
+.mini-off {
+    display: block;
+}
+.mini-on {
+    animation: minimize 1s;
+}
+#window-readme{
+    left:1000%;
+}
+#window-guru{
+     animation: summon 1s steps(150) forwards;
+     transform-origin:0px 500px;
+}
+.minimize-window1.ng-hide-remove {
+    -webkit-animation: show 1s;
+    -moz-animation: show 1s;
+    -o-animation: show 1s;
+    animation: show 1s;
+}
+.minimize-window1.ng-hide-add {
+    -webkit-animation: hide 1s;
+    -moz-animation: hide 1s;
+    -o-animation: hide 1s;
+    animation: hide 1s;
+}
+.summon-guru.ng-hide-remove{
+    -webkit-animation: summon 0.5s steps(150);
+    -moz-animation: summon 0.5s steps(150);
+    -o-animation: summon 0.5s steps(150);
+    animation: summon 0.5s steps(150);
+ 
+}
+
+.speech-lucas{
+    animation: show 2s 1s forwards;
+    opacity: 0;
+}
+.open-skills{
+    
+}
+img.fogo {
+    position: absolute;
+    transform: rotate(180deg);
+    margin: 343px 102px;
+    width: 65px;
+}
+
+img.fogo.dois {
+    margin: 343px 140px;
+}
+
+.typeit li{
+    animation: type-dos 3s steps(60, end); 
+}
+.typeit li:nth-child(2){
+  width: 0;
+  animation: type-dos2 4s 1s steps(60, end) forwards;
+}
+.typeit li:nth-child(3){
+  width: 0;    
+  animation: type-dos2 4s 4s steps(60, end) forwards;
+}
+.typeit li:nth-child(4){
+  width: 0;    
+  animation: type-dos2 4s 6s steps(60, end) forwards;
+}
+.typeit li:nth-child(5){
+  width: 0;    
+  animation: type-dos2 4s 7.5s steps(60, end) forwards;
+}
+.typeit li:nth-child(6){
+  width: 0;    
+  animation: type-dos2 4s 8.5s steps(60, end) forwards;
+}
+.underline{
+ animation: underline 1s infinite;   
+}
+@keyframes underline{
+  to{opacity: .0;}
+}
+@keyframes type-dos{ 
+  from { width: 0; } 
+}
+@-o-keyframes type-dos2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%;} 
+}
+@-moz-keyframes type-dos2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; } 
+}
+@-webkit-keyframes type-dos2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; } 
+}
+@keyframes type-dos2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; } 
+}
+@-webkit-keyframes minimize {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes summon {
+    from{}
+    to{}
+}
+@keyframes summon {
+    from{transform: scaleY(0);}
+    to{transform: scaleY(1);}
+    
+}
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@-moz-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@-o-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+@-moz-keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+@-o-keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+@keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
