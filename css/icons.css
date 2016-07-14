@@ -23,7 +23,7 @@
     background-position: 41px -80px;
 }
 .icon-guru {
-    background: url("assets/guruicon.png") no-repeat!important;
+    background: url("../assets/guruicon.png") no-repeat!important;
     background-position: -4px -1px!important;
     background-size: 50px!important
 }
@@ -55,7 +55,7 @@
 .icon {
     width: 40px;
     height: 40px;
-    background-image: url("assets/icons.png");
+    background-image: url("../assets/icons.png");
     align-content: center;
     background-size: 600px;
 }
@@ -84,11 +84,11 @@
     width: 10px;
 }
 .mini-win {
-    background-image: url("assets/minimize.png")
+    background-image: url("../assets/minimize.png")
 }
 .maxi-win {
-    background-image: url("assets/maximize.png");
+    background-image: url("../assets/maximize.png");
 }
 .close-win {
-    background-image: url("assets/close.png");
+    background-image: url("../assets/close.png");
 }

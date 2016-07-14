@@ -125,7 +125,7 @@
     border-left: 1px groove #000;
     border-right: 1px groove #fff;
     border-bottom: 1px groove #fff;
-    background-image: url("/assets/bg-browser.jpg");
+    background-image: url("../assets/bg-browser.jpg");
     flex: 1;
 }
 .url-title label {
