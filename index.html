@@ -103,7 +103,7 @@
             <div class="icon icon-social"></div>
             <span>About Me</span>
          <div class="support">
-            <div onclick="changeZIndex('window-aboutme')" class="readme-window minimize-window ui-commands-mini" ng-show="true"> 
+            <div onclick="changeZIndex('window-aboutme')" class="readme-window minimize-window ui-commands-mini" ng-show="aboutWindow"> 
                 <div ng-class="classPosition" template-about></div>
             </div> 
             </div>
@@ -115,7 +115,7 @@
             <div onclick="changeZIndex('window-guru')" class="tab_icon" ng-dblclick="popup();" >
             <div class="icon icon-guru"></div>
              <span>DA GURU</span>
-            <div onclick="changeZIndex('window-guru')" class="guru-window summon-guru ui-commands-mini" ng-show="false"> 
+            <div onclick="changeZIndex('window-guru')" class="guru-window summon-guru ui-commands-mini" ng-show="guruWindow"> 
                 <div template-guru></div>
             </div>     
          </div>

@@ -150,7 +150,8 @@
     color: black;
 }
 img.weblogo {
-    width: 60%;
+    width: 70%;
+    margin-top: 1%;
 }
 .logo {
     text-align: center;
@@ -512,6 +513,10 @@ hr.divider {
     }
     .max-win {
     min-height: 97.3vh!important;
+    }
+    .daguru{
+    top: 17px;
+    left: 670px;
     }
 }
 @media screen and (max-width: 1599px) and (min-width: 1300px) {

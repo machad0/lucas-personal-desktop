@@ -588,7 +588,7 @@
         cursor: pointer;
     }
     #ballWrapper2 {
-        top: 70%;
+        top: 65%;
         position: absolute;
     }
     .smile {
@@ -626,12 +626,12 @@
     #ball2 {
         background-size: 120px;
         background-position: center;
-        width: 80PX;
+        width: 80px;
         height: 80px;
         border-radius: 70px;
         background: yellow;
         position: absolute;
-        top: 0;
+        margin-top: -35px;
         -webkit-animation: roll 5s infinite, moveright 5s forwards;
         -moz-animation: roll 5s infinite, moveright 5s forwards;
         -o-animation: roll 5s infinite, moveright 5s forwards;
@@ -671,7 +671,7 @@
         border-color: #FFFFFF transparent;
         display: block;
         z-index: 1;
-        bottom: 282px;
+        bottom: 287px;
         left: -10px;
     }
     .speech3 {
@@ -685,7 +685,7 @@
         position: absolute;
         width: 100px;
         height: 30px;
-        margin: 100px 500px;
+        margin: 48px 496px;
         animation: showspeech2 1s 3s forwards;
         font-size: 25px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
@@ -919,9 +919,9 @@
     }
 }
 @media screen and (max-width: 2800px) and (min-width: 1600px) {
-#ball2 
+/*#ball2 
 #ball 
 .speech
 .speech3 
-.showspeech3 
+.showspeech3 */
 }
