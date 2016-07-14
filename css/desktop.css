@@ -191,14 +191,13 @@ img.weblogo {
 .left-corner {}
 .right-corner {
     position: absolute;
-    top: 70%;
-    left: 65%;
+    left: 3%;
 }
 
 .right-corner img {
-    width: 35%;
+    width: 33%;
     height: auto;
-    float: right!important;
+    /*float: right!important;*/
 }
 .daguru{
     position: absolute;
@@ -498,12 +497,21 @@ hr.divider {
     .social-windowed {
         font-size: 40px;
     }
-    .social-media-windowed {} .right-corner-windowed {
-        left: -5%;
+    .social-media-windowed {
+            margin-left: 350px!important;
+    } .right-corner-windowed {
+        /*left: 0;*/
         top: 40%;
+     
     }
     .right-corner-windowed img {
         width: 60%;
+    }
+    .social-media{
+       
+    }
+    .max-win {
+    min-height: 97.3vh!important;
     }
 }
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
