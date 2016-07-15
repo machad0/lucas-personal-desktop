@@ -569,8 +569,8 @@
         left: 500px;
     }
 }
-@media screen and (min-width: 1324px) {
-    #ballWrapper {
+@media screen and (max-width: 1600px) and (min-width: 1380px) {
+      #ballWrapper {
         width: 140px;
         height: 300px;
         position: absolute;
@@ -587,8 +587,31 @@
         transition: all 5s linear 0s;
         cursor: pointer;
     }
-    #ballWrapper2 {
+      #ballWrapper2 {
         top: 65%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1379px) and (min-width: 1280px) {
+    #ballWrapper {
+        width: 140px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        margin-left: -70px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 5s linear 0s;
+        -moz-transition: all 5s linear 0s;
+        transition: all 5s linear 0s;
+        cursor: pointer;
+    }
+    #ballWrapper2 {
+        top: 72%;
         position: absolute;
     }
     .smile {

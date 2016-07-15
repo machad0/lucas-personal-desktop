@@ -270,7 +270,7 @@ p.who{
 .social-media{
     top: 85%;
     position: absolute;
-    left: 80px;
+    left: 90px;
     list-style: none;
     list-style-type: none;
     
@@ -488,7 +488,7 @@ hr.divider {
 }
 
 
-@media screen and (max-width: 2800px) and (min-width: 1600px) {
+@media screen and (max-width: 2800px) and (min-width: 1800px) {
     .windowed-browser p {
         font-size: 40px;
     }
@@ -519,7 +519,7 @@ hr.divider {
     left: 670px;
     }
 }
-@media screen and (max-width: 1599px) and (min-width: 1300px) {
+@media screen and (max-width: 1800px) and (min-width: 1400px) {
     .windowed-browser p {
         font-size: 30px;
     }
@@ -539,6 +539,68 @@ hr.divider {
         width: 45%;
     }
 }
+@media screen and (max-width: 1399px) and (min-width: 1280px) {
+    .windowed-browser p {
+        font-size: 25px;
+    }
+    .windowed-boxes {
+        width: 70em;
+        
+    }
+    .social-windowed {
+        font-size: 25px;
+    }
+    .social-media-windowed {
+        
+        left: 21%;
+        top: 90%;
+    }
+    .right-corner-windowed {
+        left: 2%;
+        
+    }
+    .right-corner-windowed img {
+        width: 45%;
+    }
+    .daguru{
+        left:500%;
+        top: -140px
+        
+    }
+     .me{
+        min-width: 250px!important;
+    }
+    .speech-lucas{
+        width: 250px;
+        height: 250px;
+        left: 40px;
+        top: 30px;
+    }
+    .speech-lucas:after{
+        bottom: 30px;
+        left: 190px;
+        
+    }
+    .speech-lucas p{
+        font-size: 18px;
+    }
+    p.who{
+        position: absolute;
+        margin: 188px 90px;
+        font-size: 11px;
+    }
+    img.fogo {
+        position: absolute;
+        transform: rotate(180deg);
+        margin: 285px 87px!important;
+        width: 50px!important;
+}
+
+    img.fogo.dois {
+        margin: 285px 120px!important;
+}
+}
+
 @media only and(max-height: 800px) and (min-height: 600px) {
     .windowed-browser p {
         font-size: 4px;
