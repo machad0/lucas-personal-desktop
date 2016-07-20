@@ -380,7 +380,7 @@ p.who{
     margin-left: 220px!important;
 }
 .desenvolve {
-    margin-left: 230px!important;
+    margin-left: 235px!important;
 }
 .text-experiences p {
     padding: 10px 1px -1px 10px;
@@ -824,7 +824,7 @@ hr.divider {
         width: 45%!important;
     }
 }
-@media screen and (max-width: 1398px) and (min-width: 1280px) {
+@media screen and (max-width: 1398px) and (min-width: 1220px) {
     .windowed-browser p {
         font-size: 25px;
     }
