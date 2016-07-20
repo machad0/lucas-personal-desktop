@@ -1,4 +1,4 @@
-<html ng-app="CV" ng-controller="DisplayCtrl">
+<html ng-app="CV" ng-controller="DisplayCtrl as display">
    <head>
       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
          <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"> </script>
@@ -130,13 +130,27 @@
          <div class="window tray-ordr">
             <input type="checkbox" id="start-btn" class="toggle">
             <label for="start-btn"> Start</label>
-            <div id="menu" class="content"></div>
-         </div>
-         <div class="tray-ordr" ng-controller="ControllerReadme">
-            <button ng-show="trayReadme" class="tray readme-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
+             
+            <div id="menu" class="content window-border">
+            <div class="start-left-corner">
+            <section class="title-start">
+                <h1>Lucas Personal Desktop '16</h1>
+            </section>
+            </div>
+             <div class="start-items">
+                 <p>Hey! I'm Lucas, 23, a Web and Mobile Developer based on Rio de Janeiro, Brazil.</p>
+                 <p>This is my Website! The concept is based on the layout of WINDOWS 95 + Modern Brutalist WebArts. To be honest, i was really tired of how WebDev's websites are - mostly - standardized, then i made this my own way. No flat design and no joyful colors. Concrete Concept is alive.</p>
+                 <p>Phone: (+55 21) 96996-6314</p>
+                 <p>E-mail: lucas.figueira@gmail.com</p>
+                 <p style="text-align:center">Lucas Figueira</p>
+            </div>
+             </div>
          </div>
          <div class="tray-ordr">
-            <button  ng-click="display.minimizeMe" ng-show="traySkills"   class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text skills-txt" title="readme.txt">Skills</span></button>
+            <button ng-show="display.displayReadme" class="tray readme-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
+         </div>
+         <div class="tray-ordr">
+            <button  ng-show="display.displayReadme = false;" class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text skills-txt" title="readme.txt">Skills</span></button>
          </div>
       </div>
       <script type="text/javascript">/*</script>   

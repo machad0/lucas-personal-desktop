@@ -76,8 +76,9 @@
     left: 500px;
 }
 #window-aboutme{
-    top: -220px!important;
-    left: 300px!important;
+  top: -200px!important;
+  left: 300px!important;
+    
 }
 .minimize-window1.ng-hide-remove {
     -webkit-animation: show 1s;
@@ -132,6 +133,7 @@
     -moz-animation: show 1s;
     -o-animation: show 1s;
     animation: show 1s;
+    
 }
 .minimize-aboutme.ng-hide-add {
     -webkit-animation: hide 1s;

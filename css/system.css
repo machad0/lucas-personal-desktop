@@ -14,16 +14,17 @@ html {
     border: 1px solid white;
     display: inline-block;
     border: 1px;
+    z-index: 9999;
 }
 input.toggle {
     display: none;
 }
 input.toggle ~ div.content {
-    width: 200px;
-    height: 200px;
-    bottom: 24px;
+    width: 240px;
+    height: 340px;
+    bottom: 20px;
     display: none;
-    margin: .2rem;
+    margin: .2rem 0.1rem;
     overflow: hidden;
     position: absolute;
     background-color: #C0C0C0;
@@ -46,6 +47,29 @@ input.toggle ~ div.content {
 }
 input.toggle:checked ~ div.content {
     display: block;
+}
+.start-left-corner{
+    background-color: grey;
+    width: 15%;
+    height: 100%;
+    margin: .1rem;
+}
+section.title-start{
+    transform: rotate(270deg);
+	margin-top: 160px!important;
+    margin-left: -125px;
+    white-space: nowrap;
+    position: absolute;
+    color: fff;
+    font-weight: 900;
+}
+.start-items{
+    width: 80%;
+    height: 100%;
+    font-size: 14px;
+    margin-top: -350px;
+    margin-left: 40px
+
 }
 .depressed {
     border-top: 1px solid #000;
