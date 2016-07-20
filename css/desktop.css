@@ -310,7 +310,6 @@ p.who{
 .education-window {
     width: 400px;
     height: 500px;
-    z-index: 1;
     box-sizing: border-box;
     position: absolute;
 }
@@ -461,13 +460,12 @@ hr.divider {
 .readme-active {
     animation: open 3s forwards;
 }
-.skills-active {
-    animation: open2 3s forwards;
-}
+
 .skills-window{
     min-width: 780px;
     border-right: 2px groove #fff!important;
     border-bottom: 2px groove #fff!important;
+   
     
 }
 .dos-title{

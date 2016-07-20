@@ -19,6 +19,7 @@
         e.style.zIndex = superZIndex += 1;
     }
     </script>
+       <link rel="icon" href="assets/guruicon.png" type="image/png" sizes="16x16">
        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />
       <link rel="stylesheet" type="text/css" href="css/ball.css">
       <link rel="stylesheet" type="text/css" hre>
@@ -49,7 +50,7 @@
                <div class="icon icon-skills"></div>
                <span>Skills</span>
             </div>
-            <div onclick="changeZIndex('window-skills')"  class="readme-window minimize-window ui-commands-mini" ng-show="skillsWindow" >
+            <div onclick="changeZIndex('window-skills')"  class="minimize-skills ui-commands-mini" ng-show="skillsWindow" >
                <div template-skills></div>
             </div>
          </div>
@@ -59,7 +60,7 @@
             <div class="icon icon-tools"></div>
             <span>Tools</span>
                </div>
-             <div onclick="changeZIndex('window-tools')"  class="readme-window minimize-window ui-commands-mini" ng-show="toolsWindow">
+             <div onclick="changeZIndex('window-tools')"  class="minimize-tools ui-commands-mini" ng-show="toolsWindow">
                <div template-tools></div>
             </div>
            
@@ -70,7 +71,7 @@
             <div  ondblclick="changeZIndex('window-education')" class="tab_icon" ng-dblclick="popup();">
             <div class="icon icon-education"></div>
             <span>Education</span>
-            <div onclick="changeZIndex('education-window')" class="minimize-window ui-commands-mini" ng-show="educationWindow" >
+            <div onclick="changeZIndex('education-window')" class="minimize-education ui-commands-mini" ng-show="educationWindow" >
                  <div template-education></div>
          </div>
         </div>        
@@ -80,8 +81,7 @@
          <div ondblclick="changeZIndex('window-exp')" class="tab_icon" ng-dblclick="popup();">
             <div class="icon icon-experience"></div>
             <span>Experiences</span>
-             <div  onclick="changeZIndex('window-exp')" 
- class="readme-window minimize-window ui-commands-mini" ng-show="experiencesWindow" >
+             <div  onclick="changeZIndex('window-exp')" class="minimize-exp ui-commands-mini" ng-show="experiencesWindow" >
                  <div template-experiences></div>
              </div>
              </div>
@@ -92,7 +92,7 @@
              <div ondblclick="changeZIndex('window-langs')" class="tab_icon" ng-dblclick="popup();" >
             <div class="icon icon-langs"></div>
              <span>Languages</span>
-            <div onclick="changeZIndex('window-langs')" class="readme-window minimize-window ui-commands-mini" ng-show="langsWindow"> 
+            <div onclick="changeZIndex('window-langs')" class="minimize-langs ui-commands-mini" ng-show="langsWindow"> 
                 <div template-languages></div>
             </div>     
          </div>
@@ -103,7 +103,7 @@
             <div class="icon icon-social"></div>
             <span>About Me</span>
          <div class="support">
-            <div onclick="changeZIndex('window-aboutme')" class="readme-window minimize-window ui-commands-mini" ng-show="aboutWindow"> 
+            <div onclick="changeZIndex('window-aboutme')" class="minimize-aboutme ui-commands-mini" ng-show="aboutWindow"> 
                 <div ng-class="classPosition" template-about></div>
             </div> 
             </div>
