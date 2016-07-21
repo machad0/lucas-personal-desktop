@@ -1,21 +1,20 @@
-<html ng-app="CV" ng-controller="DisplayCtrl as display">
+<html ng-app="CV" ng-controller="ControllerDesktop">
    <head>
       <meta charset="UTF-8">
       <meta name="description" content="Lucas Figueira Personal Desktop! Web and Mobile Dev">
       <meta name="keywords" content="HTML,CSS,JavaScript">
       <meta name="author" content="Lucas Figueira">
-      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"> </script>
+      <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js"> </script>
       <script type="text/javascript" src="js/angular.min.js"></script>
       <script type="text/javascript" src="js/angular-animate.js"></script>
-      <script type="text/javascript" src="js/angular-material.js"></script>
-      <script type="text/javascript" src="js/angular-aria.min.js"></script>
       <script type="text/javascript" src="js/app.js"></script>
       <script type="text/javascript" src="js/controller.js"></script>
+      <script type="text/javascript" src="js/desktop.js"></script>
       <script type="text/javascript" src="js/guru.js"></script>
       <script type="text/javascript" src="js/directive.js"></script>
       <script src="js/desktop.js"></script>
-      <script type="text/javascript" src="js/experiment.js"></script>
+ 
     <script>
     superZIndex = 10;
     function changeZIndex(id) {
@@ -34,13 +33,14 @@
       <link rel="stylesheet" type="text/css" href="css/system.css">
       <link rel="stylesheet" type="text/css" href="css/desktop.css">
       <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/overcast/jquery-ui.css">
+
       <link rel="stylesheet" type="text/css" href='css/animations.css'>
    </head>
    <body md-theme="none" >
       <div id="dsktp-icons">
 
          <div tabindex="0"  id="readme" class="tab_icon icon-title" ng-controller="ControllerReadme">
-            <div ondblclick="changeZIndex('window-readme')" class="tab_icon" ng-dblclick="popup();">
+            <div ondblclick="changeZIndex('window-readme')" class="tab_icon" ng-dblclick="popup();CtrlTrayReadme()">
                <div class="icon icon-readme">
                </div>
                <span>Readme.txt</span>
@@ -52,7 +52,7 @@
          <br>
  <!--Skills-->
          <div tabindex="0" id="skills"  class="tab_icon icon-title" ng-controller="ControllerSkills">
-            <div ondblclick="changeZIndex('window-skills')" class="tab_icon" ng-dblclick="popup();">
+            <div ondblclick="changeZIndex('window-skills')" class="tab_icon" ng-dblclick="popup();CtrlTraySkills()">
                <div class="icon icon-skills"></div>
                <span>Skills</span>
             </div>
@@ -62,7 +62,7 @@
          </div>
  <!--Tools-->
          <div tabindex="0" class="tab_icon icon-title" id="tools" ng-controller="ControllerTools">
-             <div ondblclick="changeZIndex('window-tools')"  class="tab_icon" ng-dblclick="popup();">
+             <div ondblclick="changeZIndex('window-tools')"  class="tab_icon" ng-dblclick="popup();CtrlTrayTools()">
             <div class="icon icon-tools"></div>
             <span>Tools</span>
                </div>
@@ -74,7 +74,7 @@
          <br>
  <!--Education-->
          <div tabindex="0" class="tab_icon icon-title" data-title="education" ng-controller="ControllerEducation">
-            <div  ondblclick="changeZIndex('window-education')" class="tab_icon" ng-dblclick="popup();">
+            <div  ondblclick="changeZIndex('window-education')" class="tab_icon" ng-dblclick="popup();CtrlTrayEducation()">
             <div class="icon icon-education"></div>
             <span>Education</span>
             <div onclick="changeZIndex('education-window')" class="minimize-education ui-commands-mini" ng-show="educationWindow" >
@@ -84,7 +84,7 @@
         </div>
  <!--Experiences-->
          <div tabindex="0" class="tab_icon icon-title" ng-controller="ControllerExperiences">
-         <div ondblclick="changeZIndex('window-exp')" class="tab_icon" ng-dblclick="popup();">
+         <div ondblclick="changeZIndex('window-exp')" class="tab_icon" ng-dblclick="popup();CtrlTrayExperiences()">
             <div class="icon icon-experience"></div>
             <span>Experiences</span>
              <div  onclick="changeZIndex('window-exp')" class="minimize-exp ui-commands-mini" ng-show="experiencesWindow" >
@@ -95,7 +95,7 @@
  <!--Langs-->
          <br>
          <div tabindex="0" class="tab_icon icon-title" ng-controller="ControllerLanguages">
-             <div ondblclick="changeZIndex('window-langs')" class="tab_icon" ng-dblclick="popup();" >
+             <div ondblclick="changeZIndex('window-langs')" class="tab_icon" ng-dblclick="popup();CtrlTrayLangs()" >
             <div class="icon icon-langs"></div>
              <span>Languages</span>
             <div onclick="changeZIndex('window-langs')" class="minimize-langs ui-commands-mini" ng-show="langsWindow"> 
@@ -105,7 +105,7 @@
           </div>
 <!--About Me-->
          <div tabindex="0" class="tab_icon icon-title" ng-controller="ControllerAboutme">
-            <div ondblclick="changeZIndex('window-aboutme')"  class="tab_icon" ng-dblclick="popup();" >
+            <div ondblclick="changeZIndex('window-aboutme')"  class="tab_icon" ng-dblclick="popup();CtrlTrayAboutme()" >
             <div class="icon icon-social"></div>
             <span>About Me</span>
          <div class="support">
@@ -145,20 +145,38 @@
             </div>
              <div class="start-items">
                  <p>Hey! I'm Lucas, 23, a Web and Mobile Developer based on Rio de Janeiro, Brazil.</p>
-                 <p>This is my Website! The concept is based on the layout of WINDOWS 95 + Modern Brutalist WebArts. To be honest, i was really tired of how WebDev's websites are - mostly - standardized, then i made this my own way. No flat design and no joyful colors. Concrete Concept is alive.</p>
+                 <p>The concept of this website is based on the WINDOWS 95 desktop environment + Modern Brutalist WebArts. To be honest, i was really tired of how WebDev's websites are - mostly - standardized, then i made this my own way. No flat design and no joyful colors. Concrete Concept is alive.</p>
                  <p>Phone: (+55 21) 96996-6314</p>
-                 <p>E-mail: lucas.figueira@gmail.com</p>
+                 <p>E-mail: <a href="mailto:lucas.figueira@gmail.com" target="_top">lucas.figueira@gmail.com</a></p>
                  <p style="text-align:center">Lucas Figueira</p>
             </div>
              </div>
          </div>
+     <div class="tray-ordr">
+            <button ng-class="classTrayReadme" ng-show="trayReadme" ng-click="changeTrayReadme()" class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/readmeico.png"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
+         </div>
+          
          <div class="tray-ordr">
-            <button ng-show="display.displayReadme" class="tray readme-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
+            <button ng-class="classTraySkills" ng-show="traySkills" ng-click="changeTraySkills()" class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="/assets/win-icons/skillsico.png"><span class="tray-text" title="Skills">Skills</span></button>
          </div>
          <div class="tray-ordr">
-            <button  ng-show="display.displayReadme = false;" class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1"><span class="tray-text skills-txt" title="readme.txt">Skills</span></button>
+            <button  ng-class="classTrayTools" ng-show="trayTools" ng-click="changeTrayTools()" class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/toolsico.png"><span class="tray-text" title="Tools">Tools</span></button>
          </div>
-      </div>
-      <script type="text/javascript">/*</script>   
+          
+          <div class="tray-ordr">
+            <button  ng-class="classTrayEducation" ng-show="trayEducation" ng-click="changeTrayEducation()"  class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/eduico.png"><span class="tray-text" title="Education">Education</span></button>
+         </div>
+          <div class="tray-ordr">
+            <button  ng-class="classTrayExperiences" ng-show="trayExperiences" ng-click="changeTrayExperiences()" class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/expico.png"><span class="tray-text" title="Experiences">Experiences</span></button>
+         </div>
+          
+          <div class="tray-ordr">
+            <button  ng-class="classTrayLangs" ng-show="trayLangs" ng-click="changeTrayLangs()" class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/langsico.png"><span class="tray-text" title="Languages">Languages</span></button>
+         </div>
+           <div class="tray-ordr">
+            <button ng-class="classTrayAboutme" ng-show="trayAboutme" ng-click="changeTrayAboutme()" class="tray" id="mini_window"><img class="icon-mini" src="/assets/win-icons/aboutico.png"><span class="tray-text" title="About Me">About Me</span></button>
+         </div>
+        
+      </div>  
    </footer>
 </html>

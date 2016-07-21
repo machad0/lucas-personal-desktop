@@ -1,9 +1,9 @@
 #ballWrapper {
     width: 140px;
-    height: 300px;
+    height: 0px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     margin-left: -70px;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -98,7 +98,7 @@
     border-color: #FFFFFF transparent;
     display: block;
     z-index: 1;
-    bottom: 295px;
+
     left: -10px;
 }
 .speech3 {
@@ -569,13 +569,14 @@
         left: 500px;
     }
 }
-@media screen and (max-width: 1600px) and (min-width: 1380px) {
-      #ballWrapper {
+
+@media screen and (max-width: 2880px) and (min-width: 1681px) {
+#ballWrapper {
         width: 140px;
-        height: 300px;
+        height: 0px;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 51%;
         margin-left: -70px;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -587,18 +588,279 @@
         transition: all 5s linear 0s;
         cursor: pointer;
     }
-      #ballWrapper2 {
+    #ballWrapper2 {
         top: 65%;
         position: absolute;
     }
+    .smile {
+        width: 90%
+    }
+    .ball2 {
+        display: none;
+    }
+    #ball {
+        background-size: 120px;
+        background-position: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: yellow;
+        position: absolute;
+        top: 0;
+        -webkit-animation: jump-resṕ1 1s infinite;
+        -moz-animation: jump-resṕ1 1s infinite;
+        -o-animation: jump-resṕ1 1s infinite;
+        -ms-animation: jump-resṕ1 1s infinite;
+        animation: jump-resṕ1 1s infinite;
+        cursor: pointer;
+    }
+    #ball2:after,
+    #ball::after {
+        content: " ";
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        border-radius: 40px / 20px;
+    }
+    #ball2 {
+        background-size: 120px;
+        background-position: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        background: yellow;
+        position: absolute;
+        margin-top: -65px;
+        -webkit-animation: roll 5s infinite, moveright 5s forwards;
+        -moz-animation: roll 5s infinite, moveright 5s forwards;
+        -o-animation: roll 5s infinite, moveright 5s forwards;
+        -ms-animation: roll 5s infinite, moveright 5s forwards;
+        animation: roll 5s forwards, moveright 5s forwards;
+        cursor: pointer;
+    }
+    .show-box {
+        animation: show 5s;
+        display: block!important;
+    }
+    .hideball2,
+    .hideball {
+        display: none!important;
+    }
+    .showball {
+        display: block;
+        animation: showb 2s;
+    }
+    .ich {
+        animation: roll 1s steps(70) infinite;
+    }
+    .speech {
+        background: #fff;
+        border-radius: 20px;
+        border-style: dotted;
+        display: block;
+        width: 200px;
+        font-size: 30px;
+        margin: -91px -50px 10px;
+    }
+    .speech::after {
+        content: '';
+        position: absolute;
+        border-style: dotted;
+        border-width: 15px 15px 0;
+        border-color: #FFFFFF transparent;
+        display: block;
+        z-index: 1;
+        bottom: -25px;
+        left: -25px;
+    }
+    .speech3 {
+        opacity: 0;
+    }
+    .showspeech3 {
+        vertical-align: middle;
+        font-weight: 300;
+        color: #fff;
+        background: #000;
+        position: absolute;
+        width: 120px;
+        height: 30px;
+        margin: 48px 496px;
+        animation: showspeech2 1s 3s forwards;
+        font-size: 30px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.90);
+    }
+    .showspeech3:after {
+        background-color: #000;
+        color: #fff;
+    }
+    @-webkit-keyframes jump-resṕ1 {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 100px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 100px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 100px;
+            border-radius: 200px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-moz-keyframes jump-resṕ1 {
+         0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 100px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 100px;
+            border-radius: 100px / 90px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 100px;
+            border-radius: 200px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-o-keyframes jump-resṕ1 {
+         0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 100px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 100px;
+            border-radius: 200px / 190px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 100px;
+            border-radius: 200px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+@-ms-keyframes jump-resṕ1 {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 100px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 100px;
+            border-radius: 200px / 190px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 100px;
+            border-radius: 200px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
+    @keyframes jump-resṕ1 {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 60px;
+            height: 100px;
+            animation-timing-function: ease-out;
+        }
+        55% {
+            top: 80px;
+            height: 100px;
+            border-radius: 200px / 190px;
+            animation-timing-function: ease-in;
+        }
+        65% {
+            top: 40px;
+            height: 100px;
+            border-radius: 200px;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+    }
 }
-@media screen and (max-width: 1379px) and (min-width: 1280px) {
-    #ballWrapper {
+
+@media screen and (max-width: 1680px) and (min-width: 1380px) {
+      #ballWrapper {
         width: 140px;
-        height: 300px;
+        height: 0px;
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 50%;
         margin-left: -70px;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -694,7 +956,7 @@
         border-color: #FFFFFF transparent;
         display: block;
         z-index: 1;
-        bottom: 287px;
+        bottom: -10px;
         left: -10px;
     }
     .speech3 {
@@ -719,8 +981,7 @@
         background-color: #000;
         color: #fff;
     }
-    /* Animations Responsive ver 2 */
-    
+
 @-webkit-keyframes jump-resṕ {
         0% {
             top: 0;
@@ -940,11 +1201,4 @@
             left: 500px;
         }
     }
-}
-@media screen and (max-width: 2800px) and (min-width: 1600px) {
-/*#ball2 
-#ball 
-.speech
-.speech3 
-.showspeech3 */
 }

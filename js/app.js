@@ -1,1 +1,1 @@
-var app = angular.module('CV', ['ngAnimate','ngMaterial']);
+var app = angular.module('CV', ['ngAnimate']);

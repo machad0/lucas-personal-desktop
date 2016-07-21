@@ -38,38 +38,26 @@
      transform-origin:0px 500px;   
 }
 #window-skills{
-    top: -600px;
+    top: 100pxpx;
     left:400px;
-    -webkit-animation: skillsAnimation 2s forwards;
-    -moz-animation: skillsAnimation 2s forwards;
-    -o-animation: skillsAnimation 2s forwards;
-    animation: skillsAnimation 2s forwards;
+
 }
 #window-tools{
-    left: 500px;
-    top: 200px;
-    opacity: 0;
-    -webkit-animation: toolsAnimation 1s forwards;
-    -moz-animation: toolsAnimation 1s forwards;
-    -o-animation: toolsAnimation 1s forwards;
-    animation: toolsAnimation 1s forwards;
+
+left: 500px;
+   
 }
 #window-education{
     top:-150px;
-    opacity: 0;
-    -webkit-animation: educationAnimation 1s forwards;
-    -moz-animation: educationAnimation 1s forwards;
-    -o-animation: educationAnimation 1s forwards;
-    animation: educationAnimation 1s forwards;
+    margin-left: 300px;
+   
+
 }
 #window-exp{
     top:-150px;
-    left: 600px;
-    opacity: 0;
-    -webkit-animation: expAnimation 1s forwards;
-    -moz-animation: expAnimation 1s forwards;
-    -o-animation: expAnimation 1s forwards;
-    animation: expAnimation 1s forwards;
+    left: 400px;
+
+
 }
 #window-langs{
     top: -120px;
@@ -92,11 +80,23 @@
     -o-animation: hide 1s;
     animation: hide 1s;
 }
+.minimize-skills.ng-hide-remove{
+    -webkit-animation: show 1s forwards;
+    -moz-animation: show 1s forwards;
+    -o-animation: show 1s forwards;
+    animation: show 1s forwards;
+}
 .minimize-skills.ng-hide-add{
     -webkit-animation: hideSkills 1s steps(100);
     -moz-animation: hideSkills 1s steps(100);
     -o-animation: hideSkills 1s steps(100);
     animation: hideSkills 1s steps(100);
+}
+.minimize-tools.ng-hide-remove{
+ -webkit-animation: show 1s forwards;
+    -moz-animation: show 1s forwards;
+    -o-animation: show 1s forwards;
+    animation: show 1s forwards;
 }
 .minimize-tools.ng-hide-add{
     -webkit-animation: hideTools 1s;
@@ -104,11 +104,23 @@
     -o-animation: hideTools 1s;
     animation: hideTools 1s;
 }
+.minimize-education.ng-hide-remove{
+    -webkit-animation: show 1s forwards;
+    -moz-animation: show 1s forwards;
+    -o-animation: show 1s forwards;
+    animation: show 1s forwards;
+}
 .minimize-education.ng-hide-add{
     -webkit-animation: hide 1s ease;
     -moz-animation: hide 1s ease;
     -o-animation: hide 1s ease;
     animation: hide 1s ease;
+}
+.minimize-exp.ng-hide-remove{
+    -webkit-animation: show 1s ease;
+    -moz-animation: show 1s ease;
+    -o-animation: show 1s ease;
+    animation: show 1s ease;
 }
 .minimize-exp.ng-hide-add{
     -webkit-animation: hide 1s ease;
@@ -380,7 +392,7 @@ img.fogo.dois {
         transform: scale(0.5);
     }
 }
-@-o-keyframes skillsAnimation{
+/*@-o-keyframes skillsAnimation{
     to{top:50%;}
 }
 @-moz-keyframes skillsAnimation{
@@ -391,7 +403,7 @@ img.fogo.dois {
 }
 @keyframes skillsAnimation{
     to{top:50%;}
-}
+}*/
 @-o-keyframes hideSkills{
     to{opacity:0;
     transform: rotate(180deg);}
@@ -417,25 +429,73 @@ img.fogo.dois {
     transform: rotate(180deg);}
 }
 @keyframes hideSkills{
-    to{opacity:0;
+  to{opacity:0;
     transform: rotate(180deg);}
 }
-@-o-keyframes toolsAnimation{
-    to{opacity: 1;
-      top: -20px;}
+/*@-o-keyframes toolsAnimation{
+   0% {
+        opacity: 0;
+        margin-top:80px;
+       position: absolute;
+    }
+    70% {
+        
+        position: absolute;
+    }
+    100% {
+        opacity: 1;
+        margin-top:-10px!important;
+        position: absolute;
+    }
 }
 @-moz-keyframes toolsAnimation{
-    to{opacity: 1;
-      top: -20px;}
+   0% {
+        opacity: 0;
+        margin-top:80px;
+       position: absolute;
+    }
+    70% {
+        
+        position: absolute;
+    }
+    100% {
+        opacity: 1;
+        margin-top:-10px!important;
+        position: absolute;
+    }
 }
 @-webkit-keyframes toolsAnimation{
-    to{opacity: 1;
-      top: -20px;}
+   0% {
+        opacity: 0;
+        margin-top:80px;
+       position: absolute;
+    }
+    70% {
+        
+        position: absolute;
+    }
+    100% {
+        opacity: 1;
+        margin-top:-10px!important;
+        position: absolute;
+    }
 }
 @keyframes toolsAnimation{
-    to{opacity: 1;
-      top: -20px;}
-}
+   0% {
+        opacity: 0;
+        margin-top:80px;
+       position: absolute;
+    }
+    70% {
+        
+        position: absolute;
+    }
+    100% {
+        opacity: 1;
+        margin-top:-10px!important;
+        position: absolute;
+    }
+}*/
 @-o-keyframes hideTools{
     to{opacity: 0;
        transform: rotateX(180deg);
@@ -456,14 +516,17 @@ img.fogo.dois {
        transform: rotateX(180deg);
     }
 }
-@keyframes educationAnimation{
-    to{margin-left: 300px;
-       opacity: 1;    
+
+/*@keyframes expAnimation{
+    from{
+        position: absolute;
+        opacity: 0;
+        margin-left: 0px;
     }
-}
-@keyframes expAnimation{
-    to{ margin-left: -200px;
+    to{ 
+        margin-left: -200px!important;
+        position: absolute;
         opacity: 1;
         
     }
-}
+}*/

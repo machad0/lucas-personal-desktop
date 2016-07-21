@@ -69,8 +69,8 @@ section.title-start{
     font-size: 14px;
     margin-top: -350px;
     margin-left: 40px
-
 }
+
 .depressed {
     border-top: 1px solid #000;
     border-left: 1px solid #000;
@@ -78,24 +78,38 @@ section.title-start{
     border-bottom: 1px solid #dfdfdf;
     box-shadow: inset 1px 1px gray, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
 }
+.undprssd{
+    border: 3px outset;
+    box-shadow: 1px 1px gray, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
+}
 input.toggle:checked + label {
     border-top: 2px groove #808080 !important;
     border-left: 2px groove #808080 !important;
     border-bottom: 2px groove #FFFFFF !important;
     border-right: 2px groove #FFFFFF !important;
 }
+button#mini_window {
+    top: 1;
+    left: 0;
+    vertical-align: middle;
+}
 .tray {
     width: 110px;
-    height: 25px;
+    height: 20px;
     z-index: 999;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     position: relative;
+}
+.tray span{
+    top: 0;
+    left: 0;
+    font-size: 15px;
 }
 .tray-ordr {
     display: inline-block;
     position: relative;
 }
 .icon-mini {
-    width: 10px;
+    width: 12px;
 }

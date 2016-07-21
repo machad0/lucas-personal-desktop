@@ -1,19 +1,3 @@
-app.controller('DisplayCtrl', ['$scope', function($scope) {
-    $scope.readme = false;
-
-    $scope.traySkills = false;
-
-    /* var self = this;
-     self.displayReadme = false;
-     self.displaySKills = false;
-     self.displayTools = false;
-     self.displayEducation = false;
-     self.displayExperiences = false;
-     self.displayProjects = false;
-     self.displayLangs = false;
-     self.displaySocial = false;*/
-
-}]);
 app.controller('ControllerReadme', ['$scope', function($scope) {
     $scope.readme = {
         title: 'Readme.txt',
@@ -21,27 +5,22 @@ app.controller('ControllerReadme', ['$scope', function($scope) {
     };
 
     $scope.readWindow = false;
-    $scope.trayReadme = false;
+   
 
 
     $scope.popup = function() {
         if ($scope.readWindow == false) {
             $scope.readWindow = true;
-            $scope.trayReadme = true;
         }
     }
     $scope.closeme = function() {
         if ($scope.readWindow == true) {
             $scope.readWindow = false;
-            $scope.trayReadme = false;
         }
     }
 }])
 app.controller('ControllerSkills', ['$scope', function($scope) {
-    $scope.skills = {
-        title: 'Skills',
-        body: ' Lostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum                                                Lostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum                Lorem ipsum dolor sit amet, consectetur'
-    };
+
     $scope.skillsWindow = false;
     $scope.traySkills = false;
 
@@ -49,13 +28,11 @@ app.controller('ControllerSkills', ['$scope', function($scope) {
     $scope.popup = function() {
         if ($scope.skillsWindow == false) {
             $scope.skillsWindow = true;
-            $scope.traySkills = true;
         }
     }
     $scope.closeme = function() {
         if ($scope.skillsWindow == true) {
             $scope.skillsWindow = false;
-            $scope.traySkills = false;
         }
     }
 

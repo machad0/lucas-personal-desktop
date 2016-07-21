@@ -20,7 +20,9 @@
     height: 16px;
     width: 16px;
     box-sizing: border-box;
-    vertical-align: -1px;
+    top: 0;
+    left:0;
+    vertical-align: middle;
 }
 .window-header {
     background-color: #010081;
@@ -44,8 +46,11 @@
 .window-title {
     padding-left: 1px;
     height: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     color: #fff;
 }
 .action_btn {
@@ -282,9 +287,10 @@ p.who{
 .social-media li{
     display: inline;
 }
-.social-media{
-    
+.social:hover{
+    font-size:25px;
 }
+
 .social {
     font-size: 20px;
     background: #000;
@@ -301,11 +307,11 @@ p.who{
 }
 
 .tools-window {
-    width: 600px;
     height: 453px;
+    width: 650px;
     z-index: 1;
     box-sizing: border-box;
-    width: 650px;
+    
     position: absolute;
 }
 .education-window {
@@ -501,6 +507,10 @@ hr.divider {
     .social-windowed {
         font-size: 76px;
     }
+    .social-windowed:hover{
+        font-size: 85px;
+    }
+
     .social-media-windowed {
         margin-left: 395px!important;
     } .right-corner-windowed {
@@ -533,6 +543,9 @@ hr.divider {
     .social-windowed {
         font-size: 76px;
     }
+     .social-windowed:hover{
+        font-size: 85px;
+    }
     .social-media-windowed {
         margin-left: 335px!important;
     } .right-corner-windowed {
@@ -564,6 +577,9 @@ hr.divider {
     }
     .social-windowed {
         font-size: 76px;
+    }
+     .social-windowed:hover{
+        font-size: 85px;
     }
     .social-media-windowed {
         margin-left: 300px!important;
@@ -598,6 +614,9 @@ hr.divider {
     .social-windowed {
         font-size: 76px;
     }
+    .social-windowed:hover{
+        font-size: 85px;
+    }
     .social-media-windowed {
         margin-left: 270px;
     } .right-corner-windowed {
@@ -629,6 +648,9 @@ hr.divider {
     }
     .social-windowed {
         font-size: 60px!important;
+    }
+       .social-windowed:hover{
+        font-size: 75px;
     }
     .social-media-windowed {
         margin-left: 420px;
@@ -664,6 +686,9 @@ hr.divider {
     .social-windowed {
         font-size: 55px!important;
     }
+    .social-windowed:hover{
+        font-size: 65px;
+    }
     .social-media-windowed {
         margin-left: 420px;
         margin-top: 70px;
@@ -695,6 +720,9 @@ hr.divider {
     }
     .social-windowed {
         font-size: 55px!important;
+    }
+    .social-windowed:hover{
+        font-size: 65px;
     }
     .social-media-windowed {
         margin-left: 275px;
@@ -728,6 +756,9 @@ hr.divider {
     .social-windowed {
         font-size: 40px;
     }
+    .social-windowed:hover{
+        font-size: 50px;
+    }
     .social-media-windowed {
             margin-left: 335px!important;
     } .right-corner-windowed {
@@ -757,8 +788,10 @@ hr.divider {
         width: 70em;
     }
     .social-windowed {
-        font-size: 30px;
-              
+        font-size: 30px;        
+    }
+    .social-windowed:hover{
+        font-size: 40px;
     }
     .social-media-windowed {
         left: 5%;
@@ -780,6 +813,9 @@ hr.divider {
     }
     .social-windowed {
         font-size: 30px;
+    }
+    .social-windowed:hover{
+        font-size: 40px;
     }
     .social-media-windowed {
         left: 23%;
@@ -808,6 +844,9 @@ hr.divider {
     .social-windowed {
         font-size: 30px;
     }
+    .social-windowed:hover{
+        font-size: 40px;
+    }
     .social-media-windowed {
         left: 20%;
     }
@@ -835,6 +874,9 @@ hr.divider {
     }
     .social-windowed {
         font-size: 25px;
+    }
+    .social-windowed:hover{
+        font-size: 35px;
     }
     .social-media-windowed {
         

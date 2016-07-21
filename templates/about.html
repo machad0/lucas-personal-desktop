@@ -1,12 +1,12 @@
 <div class="draggy">
-<div id="window-aboutme" class="window-form-browser window-border" ng-class="classMaxi">
+<div  ng-show="aboutmeMin"  id="window-aboutme" class="window-form-browser window-border" ng-class="classMaxi">
     <header class="window-header" style="display:block;">
-        <img class="window-icon" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1">
-        <span class="window-title text-form"></span>
+        <img class="window-icon" src="/assets/win-icons/aboutico.png">
+        <span class="window-title text-form">ABOUT ME</span>
         <div class="action_btn">
-            <button ng-click="" class="form_btn mini-win"></button>
+            <button ng-click="miniAboutme()" class="form_btn mini-win"></button>
             <button id="maxbtn" ng-click="changeClass()" class="form_btn maxi-win"></button>
-            <button ng-click="closeme()" class="form_btn close-win"></button>
+            <button ng-click="closeme();closeTrayAboutme()" class="form_btn close-win"></button>
         </div>
 
     </header>

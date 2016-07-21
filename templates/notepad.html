@@ -1,10 +1,10 @@
-<div id="window-readme" class="window-form window-border open-readme drag">
+<div ng-show="readmeMin" id="window-readme" class="window-form window-border open-readme drag">
     <header class="window-header" style="display:block;">
-        <img class="window-icon" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1">
-        <span class="window-title text-form">{{readme.title}}{{skills.title}}</span>
+        <img class="window-icon" src="/assets/win-icons/readmeico.png">
+        <span class="window-title text-form">README.TXT</span>
         <div class="action_btn">
-            <button ng-click="changeStat()" class="form_btn mini-win"></button>
-            <button ng-click="closeme()" class="form_btn close-win"></button>
+            <button ng-click="miniReadme()" class="form_btn mini-win"></button>
+            <button ng-click="closeme();closeTrayReadme()" class="form_btn close-win"></button>
         </div>
     </header>
     <section class="folder-body">

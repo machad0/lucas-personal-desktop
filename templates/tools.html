@@ -1,10 +1,11 @@
-<div id="window-tools" class="tools-window window-border open-readme drag">
+<div ng-show="toolsMin" id="window-tools" class="tools-window window-border open-readme drag">
     <header class="window-header" style="display:block;">
-        <img class="window-icon" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=16%C3%9716&w=16&h=16&txtpad=1">
-        <span class="window-title text-form">{{tools.title}}{{skills.title}}</span>
+        <img class="window-icon" src="/assets/win-icons/toolsico.png">
+        <span class="window-title text-form">TOOLS</span>
         <div class="action_btn">
 
-            <button ng-click="closeme()" class="form_btn close-win"></button>
+            <button ng-click="miniTools()" class="form_btn mini-win"></button>
+            <button ng-click="closeme();closeTrayTools()" class="form_btn close-win"></button>
         </div>
     </header>
 
