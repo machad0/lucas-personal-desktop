@@ -60,8 +60,11 @@ section.title-start{
     margin-left: -125px;
     white-space: nowrap;
     position: absolute;
-    color: fff;
+    color: #fff;
     font-weight: 900;
+}
+section.title-start h1{
+    font-size: 1.5em
 }
 .start-items{
     width: 80%;
