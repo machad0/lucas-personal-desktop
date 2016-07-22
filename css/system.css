@@ -57,14 +57,14 @@ input.toggle:checked ~ div.content {
 section.title-start{
     transform: rotate(270deg);
 	margin-top: 160px!important;
-    margin-left: -125px;
+    margin-left: -122px;
     white-space: nowrap;
     position: absolute;
     color: #fff;
     font-weight: 900;
 }
 section.title-start h1{
-    font-size: 1.5em
+    font-size: 1.4em
 }
 .start-items{
     width: 80%;
