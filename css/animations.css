@@ -27,6 +27,20 @@
 .mini-on {
     animation: minimize 1s;
 }
+.heart{
+    color: red!important;
+    animation:kokoro 2s steps(100) forwards, pulse 1s 3s infinite;
+
+    position: absolute;
+}
+@keyframes kokoro{
+
+    to{transform: rotate(270deg);}
+}
+@keyframes pulse{
+
+    to{font-size: 15px;}
+}
 #window-readme{
     left:1000%;
 }
