@@ -1,8 +1,7 @@
 .max-win {
-    min-height: 93vh;
+    min-height: 95vh;
     min-width: 100vw;
     overflow: hidden;
-    
 }
 .unmax-win {
     top: 0px!important;
@@ -12,14 +11,12 @@
 .changePosition {
     top: 0px!important;
     left: 0px!important;
-    margin: -70px -390px;
-
+    margin: -88px -390px;
 }
-.natural{
+.natural {
     top: 0px;
     left: 0px;
     margin: 0px!important;
-    
 }
 .mini-off {
     display: block;
@@ -27,60 +24,43 @@
 .mini-on {
     animation: minimize 1s;
 }
-.heart{
+.heart {
     color: red!important;
-    animation:kokoro 2s steps(100) forwards, pulse 1s 3s infinite;
-
+    animation: kokoro 2s 1s steps(100) forwards, pulse 1s 4s infinite;
     position: absolute;
 }
-@keyframes kokoro{
-
-    to{transform: rotate(270deg);}
+#window-readme {
+    left: 1000%;
 }
-@keyframes pulse{
-
-    to{font-size: 15px;}
-}
-#window-readme{
-    left:1000%;
-}
-#window-guru{
+#window-guru {
     -webkit-animation: summon 1s steps(150) forwards;
     -moz-animation: summon 1s steps(150) forwards;
     -o-animation: summon 1s steps(150) forwards;
-     animation: summon 1s steps(150) forwards;
-     transform-origin:0px 500px;   
+    animation: summon 1s steps(150) forwards;
+    transform-origin: 0px 500px;
 }
-#window-skills{
+#window-skills {
     top: 100pxpx;
-    left:400px;
-
-}
-#window-tools{
-
-left: 500px;
-   
-}
-#window-education{
-    top:-150px;
-    margin-left: 300px;
-   
-
-}
-#window-exp{
-    top:-150px;
     left: 400px;
-
-
 }
-#window-langs{
+#window-tools {
+    left: 500px;
+}
+#window-education {
+    top: -150px;
+    margin-left: 300px;
+}
+#window-exp {
+    top: -150px;
+    left: 400px;
+}
+#window-langs {
     top: -120px;
     left: 500px;
 }
-#window-aboutme{
-  top: -200px!important;
-  left: 300px!important;
-    
+#window-aboutme {
+    top: -200px!important;
+    left: 300px!important;
 }
 .minimize-window1.ng-hide-remove {
     -webkit-animation: show 1s;
@@ -94,49 +74,49 @@ left: 500px;
     -o-animation: hide 1s;
     animation: hide 1s;
 }
-.minimize-skills.ng-hide-remove{
+.minimize-skills.ng-hide-remove {
     -webkit-animation: show 1s forwards;
     -moz-animation: show 1s forwards;
     -o-animation: show 1s forwards;
     animation: show 1s forwards;
 }
-.minimize-skills.ng-hide-add{
+.minimize-skills.ng-hide-add {
     -webkit-animation: hideSkills 1s steps(100);
     -moz-animation: hideSkills 1s steps(100);
     -o-animation: hideSkills 1s steps(100);
     animation: hideSkills 1s steps(100);
 }
-.minimize-tools.ng-hide-remove{
- -webkit-animation: show 1s forwards;
-    -moz-animation: show 1s forwards;
-    -o-animation: show 1s forwards;
-    animation: show 1s forwards;
-}
-.minimize-tools.ng-hide-add{
-    -webkit-animation: hideTools 1s;
-    -moz-animation: hideTools 1s;
-    -o-animation: hideTools 1s;
-    animation: hideTools 1s;
-}
-.minimize-education.ng-hide-remove{
+.minimize-tools.ng-hide-remove {
     -webkit-animation: show 1s forwards;
     -moz-animation: show 1s forwards;
     -o-animation: show 1s forwards;
     animation: show 1s forwards;
 }
-.minimize-education.ng-hide-add{
+.minimize-tools.ng-hide-add {
+    -webkit-animation: hideTools 1s;
+    -moz-animation: hideTools 1s;
+    -o-animation: hideTools 1s;
+    animation: hideTools 1s;
+}
+.minimize-education.ng-hide-remove {
+    -webkit-animation: show 1s forwards;
+    -moz-animation: show 1s forwards;
+    -o-animation: show 1s forwards;
+    animation: show 1s forwards;
+}
+.minimize-education.ng-hide-add {
     -webkit-animation: hide 1s ease;
     -moz-animation: hide 1s ease;
     -o-animation: hide 1s ease;
     animation: hide 1s ease;
 }
-.minimize-exp.ng-hide-remove{
+.minimize-exp.ng-hide-remove {
     -webkit-animation: show 1s ease;
     -moz-animation: show 1s ease;
     -o-animation: show 1s ease;
     animation: show 1s ease;
 }
-.minimize-exp.ng-hide-add{
+.minimize-exp.ng-hide-add {
     -webkit-animation: hide 1s ease;
     -moz-animation: hide 1s ease;
     -o-animation: hide 1s ease;
@@ -159,7 +139,6 @@ left: 500px;
     -moz-animation: show 1s;
     -o-animation: show 1s;
     animation: show 1s;
-    
 }
 .minimize-aboutme.ng-hide-add {
     -webkit-animation: hide 1s;
@@ -167,119 +146,196 @@ left: 500px;
     -o-animation: hide 1s;
     animation: hide 1s;
 }
-.speech-lucas{
+.speech-lucas {
     animation: show 2s 1s forwards;
     opacity: 0;
 }
-
 img.fogo {
     position: absolute;
     transform: rotate(180deg);
     margin: 343px 102px;
     width: 65px
 }
-
 img.fogo.dois {
     margin: 343px 140px;
 }
-
-.typeit li{
+.typeit li {
     -webkit-animation: type-dos 3s steps(60, end);
     -moz-animation: type-dos 3s steps(60, end);
     -o-animation: type-dos 3s steps(60, end);
-    animation: type-dos 3s steps(60, end); 
+    animation: type-dos 3s steps(60, end);
 }
-.typeit li:nth-child(2){
-  width: 0;
-  -webkit-animation: type-dos2 4s 1s steps(60, end) forwards;
-  -moz-animation: type-dos2 4s 1s steps(60, end) forwards;
-  -o-animation: type-dos2 4s 1s steps(60, end) forwards;
-  animation: type-dos2 4s 1s steps(60, end) forwards;
+.typeit li:nth-child(2) {
+    width: 0;
+    -webkit-animation: type-dos2 4s 1s steps(60, end) forwards;
+    -moz-animation: type-dos2 4s 1s steps(60, end) forwards;
+    -o-animation: type-dos2 4s 1s steps(60, end) forwards;
+    animation: type-dos2 4s 1s steps(60, end) forwards;
 }
-.typeit li:nth-child(3){
-  width: 0; 
-  -webkit-animation: type-dos2 4s 4s steps(60, end) forwards;
-  -moz-animation: type-dos2 4s 4s steps(60, end) forwards;
-  -o-animation: type-dos2 4s 4s steps(60, end) forwards;
-  animation: type-dos2 4s 4s steps(60, end) forwards;
+.typeit li:nth-child(3) {
+    width: 0;
+    -webkit-animation: type-dos2 4s 4s steps(60, end) forwards;
+    -moz-animation: type-dos2 4s 4s steps(60, end) forwards;
+    -o-animation: type-dos2 4s 4s steps(60, end) forwards;
+    animation: type-dos2 4s 4s steps(60, end) forwards;
 }
-.typeit li:nth-child(4){
-  width: 0;
-  -webkit-animation: type-dos2 4s 6s steps(60, end) forwards;
-  -moz-animation: type-dos2 4s 6s steps(60, end) forwards;
-  -o-animation: type-dos2 4s 6s steps(60, end) forwards;
-  animation: type-dos2 4s 6s steps(60, end) forwards;
+.typeit li:nth-child(4) {
+    width: 0;
+    -webkit-animation: type-dos2 4s 6s steps(60, end) forwards;
+    -moz-animation: type-dos2 4s 6s steps(60, end) forwards;
+    -o-animation: type-dos2 4s 6s steps(60, end) forwards;
+    animation: type-dos2 4s 6s steps(60, end) forwards;
 }
-.typeit li:nth-child(5){
-  width: 0; 
-  -webkit-animation: type-dos2 4s 7.5s steps(60, end) forwards;
-  -moz-animation: type-dos2 4s 7.5s steps(60, end) forwards;
-  -o-animation: type-dos2 4s 7.5s steps(60, end) forwards;
-  animation: type-dos2 4s 7.5s steps(60, end) forwards;
+.typeit li:nth-child(5) {
+    width: 0;
+    -webkit-animation: type-dos2 4s 7.5s steps(60, end) forwards;
+    -moz-animation: type-dos2 4s 7.5s steps(60, end) forwards;
+    -o-animation: type-dos2 4s 7.5s steps(60, end) forwards;
+    animation: type-dos2 4s 7.5s steps(60, end) forwards;
 }
-.typeit li:nth-child(6){
-  width: 0;
-  -webkit-animation: type-dos2 4s 8.5s steps(60, end) forwards;
-  -moz-animation: type-dos2 4s 8.5s steps(60, end) forwards;
-  -o-animation: type-dos2 4s 8.5s steps(60, end) forwards;
-  animation: type-dos2 4s 8.5s steps(60, end) forwards;
+.typeit li:nth-child(6) {
+    width: 0;
+    -webkit-animation: type-dos2 4s 8.5s steps(60, end) forwards;
+    -moz-animation: type-dos2 4s 8.5s steps(60, end) forwards;
+    -o-animation: type-dos2 4s 8.5s steps(60, end) forwards;
+    animation: type-dos2 4s 8.5s steps(60, end) forwards;
 }
-.underline{
- -webkit-animation: underline 1s infinite;   
- -moz-animation: underline 1s infinite;   
- -o-animation: underline 1s infinite;       
- animation: underline 1s infinite;   
+.underline {
+    -webkit-animation: underline 1s infinite;
+    -moz-animation: underline 1s infinite;
+    -o-animation: underline 1s infinite;
+    animation: underline 1s infinite;
 }
-
 /* ANIMATONS */
 
-
-@-o-keyframes underline{
-  to{opacity: .0;}
+@-o-keyframes kokoro {
+    to {
+        transform: rotate(270deg);
+    }
 }
-@-moz-keyframes underline{
-  to{opacity: .0;}
+@-moz-keyframes kokoro {
+    to {
+        transform: rotate(270deg);
+    }
 }
-@-webkit-keyframes underline{
-  to{opacity: .0;}
+@-webkit-keyframes kokoro {
+    to {
+        transform: rotate(270deg);
+    }
 }
-@keyframes underline{
-  to{opacity: .0;}
+@keyframes kokoro {
+    to {
+        transform: rotate(270deg);
+    }
 }
-@keyframes underline{
-  to{opacity: .0;}
+@-o-keyframes pulse {
+    to {
+        font-size: 15px;
+    }
 }
-@-o-keyframes type-dos{ 
-  from { width: 0; } 
+@-moz-keyframes pulse {
+    to {
+        font-size: 15px;
+    }
 }
-@-moz-keyframes type-dos{ 
-  from { width: 0; } 
+@-webkit-keyframes pulse {
+    to {
+        font-size: 15px;
+    }
 }
-@-webkit-keyframes type-dos{ 
-  from { width: 0; } 
+@keyframes pulse {
+    to {
+        font-size: 15px;
+    }
 }
-@keyframes type-dos{ 
-  from { width: 0; } 
+@-o-keyframes underline {
+    to {
+        opacity: .0;
+    }
 }
-@-o-keyframes type-dos2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100%;} 
+@-moz-keyframes underline {
+    to {
+        opacity: .0;
+    }
 }
-@-moz-keyframes type-dos2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100%; } 
+@-webkit-keyframes underline {
+    to {
+        opacity: .0;
+    }
 }
-@-webkit-keyframes type-dos2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100%; } 
+@keyframes underline {
+    to {
+        opacity: .0;
+    }
 }
-@keyframes type-dos2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100%; } 
+@keyframes underline {
+    to {
+        opacity: .0;
+    }
+}
+@-o-keyframes type-dos {
+    from {
+        width: 0;
+    }
+}
+@-moz-keyframes type-dos {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes type-dos {
+    from {
+        width: 0;
+    }
+}
+@keyframes type-dos {
+    from {
+        width: 0;
+    }
+}
+@-o-keyframes type-dos2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@-moz-keyframes type-dos2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@-webkit-keyframes type-dos2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes type-dos2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 @-webkit-keyframes minimize {
     0% {
@@ -293,13 +349,15 @@ img.fogo.dois {
     }
 }
 @-webkit-keyframes summon {
-    from{}
-    to{}
+    from {} to {}
 }
 @keyframes summon {
-    from{transform: scaleY(0);}
-    to{transform: scaleY(1);}
-    
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
 }
 @-webkit-keyframes show {
     0% {
@@ -353,7 +411,6 @@ img.fogo.dois {
         transform: scale(1);
     }
 }
-
 @-webkit-keyframes hide {
     0% {
         opacity: 1;
@@ -418,33 +475,48 @@ img.fogo.dois {
 @keyframes skillsAnimation{
     to{top:50%;}
 }*/
-@-o-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+
+@-o-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@-moz-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+@-moz-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@-webkit-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+@-webkit-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@-o-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+@-o-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@-moz-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+@-moz-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@-webkit-keyframes hideSkills{
-    to{opacity:0;
-    transform: rotate(180deg);}
+@-webkit-keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
-@keyframes hideSkills{
-  to{opacity:0;
-    transform: rotate(180deg);}
+@keyframes hideSkills {
+    to {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
 }
 /*@-o-keyframes toolsAnimation{
    0% {
@@ -510,27 +582,31 @@ img.fogo.dois {
         position: absolute;
     }
 }*/
-@-o-keyframes hideTools{
-    to{opacity: 0;
-       transform: rotateX(180deg);
-    }
-}
-@-moz-keyframes hideTools{
-    to{opacity: 0;
-       transform: rotateX(180deg);
-    }
-}
-@-webkit-keyframes hideTools{
-    to{opacity: 0;
-       transform: rotateX(180deg);
-    }
-}
-@keyframes hideTools{
-    to{opacity: 0;
-       transform: rotateX(180deg);
-    }
-}
 
+@-o-keyframes hideTools {
+    to {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+}
+@-moz-keyframes hideTools {
+    to {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+}
+@-webkit-keyframes hideTools {
+    to {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+}
+@keyframes hideTools {
+    to {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+}
 /*@keyframes expAnimation{
     from{
         position: absolute;

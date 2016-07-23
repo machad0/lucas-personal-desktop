@@ -48,32 +48,31 @@ input.toggle ~ div.content {
 input.toggle:checked ~ div.content {
     display: block;
 }
-.start-left-corner{
+.start-left-corner {
     background-color: grey;
     width: 15%;
     height: 100%;
     margin: .1rem;
 }
-section.title-start{
+section.title-start {
     transform: rotate(270deg);
-	margin-top: 160px!important;
+    margin-top: 160px!important;
     margin-left: -122px;
     white-space: nowrap;
     position: absolute;
     color: #fff;
     font-weight: 900;
 }
-section.title-start h1{
+section.title-start h1 {
     font-size: 1.4em
 }
-.start-items{
+.start-items {
     width: 80%;
     height: 100%;
     font-size: 14px;
     margin-top: -350px;
     margin-left: 40px
 }
-
 .depressed {
     border-top: 1px solid #000;
     border-left: 1px solid #000;
@@ -81,7 +80,7 @@ section.title-start h1{
     border-bottom: 1px solid #dfdfdf;
     box-shadow: inset 1px 1px gray, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
 }
-.undprssd{
+.undprssd {
     border: 3px outset;
     box-shadow: 1px 1px gray, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
 }
@@ -104,7 +103,7 @@ button#mini_window {
     text-align: left;
     position: relative;
 }
-.tray span{
+.tray span {
     top: 0;
     left: 0;
     font-size: 15px;

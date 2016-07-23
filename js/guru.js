@@ -14,8 +14,7 @@
         $scope.guruWindow = false;
         $scope.popup = function() {
         if ($scope.guruWindow == false) {
-            $scope.guruWindow = true;
-            
+            $scope.guruWindow = true;   
         }
       }
   }]);
