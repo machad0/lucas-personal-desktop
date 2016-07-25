@@ -45,7 +45,7 @@
                <span>Readme.txt</span>
             </div>
             <div onclick="changeZIndex('window-readme')" class="readme-window minimize-window1 ui-commands-mini"  ng-show="readWindow" >
-               <div template-notepad></div>
+               <div drag-me template-notepad></div>
             </div>
          </div>
          <br>
@@ -56,7 +56,7 @@
                <span>Skills</span>
             </div>
             <div onclick="changeZIndex('window-skills')"  class="minimize-skills ui-commands-mini" ng-show="skillsWindow" >
-               <div template-skills></div>
+               <div drag-me template-skills></div>
             </div>
          </div>
  <!--Tools-->
@@ -66,7 +66,7 @@
             <span>Tools</span>
                </div>
              <div onclick="changeZIndex('window-tools')"  class="minimize-tools ui-commands-mini" ng-show="toolsWindow">
-               <div template-tools></div>
+               <div drag-me template-tools></div>
             </div>
            
          </div>
@@ -77,7 +77,7 @@
             <div class="icon icon-education"></div>
             <span>Education</span>
             <div onclick="changeZIndex('education-window')" class="minimize-education ui-commands-mini" ng-show="educationWindow" >
-                 <div template-education></div>
+                 <div drag-me template-education></div>
          </div>
         </div>        
         </div>
@@ -87,7 +87,7 @@
             <div class="icon icon-experience"></div>
             <span>Experiences</span>
              <div  onclick="changeZIndex('window-exp')" class="minimize-exp ui-commands-mini" ng-show="experiencesWindow" >
-                 <div template-experiences></div>
+                 <div drag-me template-experiences></div>
              </div>
              </div>
           </div>
@@ -98,7 +98,7 @@
             <div class="icon icon-langs"></div>
              <span>Languages</span>
             <div onclick="changeZIndex('window-langs')" class="minimize-langs ui-commands-mini" ng-show="langsWindow"> 
-                <div template-languages></div>
+                <div drag-me template-languages></div>
             </div>     
          </div>
           </div>
@@ -109,7 +109,7 @@
             <span>About Me</span>
          <div class="support">
             <div onclick="changeZIndex('window-aboutme')" class="minimize-aboutme ui-commands-mini" ng-show="aboutWindow"> 
-                <div ng-class="classPosition" template-about></div>
+                <div ng-class="classPosition" drag-me template-about></div>
             </div> 
             </div>
             </div>
@@ -121,7 +121,7 @@
             <div class="icon icon-guru"></div>
              <span>DA GURU</span>
             <div onclick="changeZIndex('window-guru')" class="guru-window summon-guru ui-commands-mini" ng-show="guruWindow"> 
-                <div template-guru></div>
+                <div drag-me template-guru></div>
             </div>     
          </div>
           </div>
@@ -152,28 +152,20 @@
              </div>
          </div>
      <div class="tray-ordr">
-            <button ng-class="classTrayReadme" ng-show="trayReadme" ng-click="changeTrayReadme()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/readmeico.png"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
-         </div>
-          
-         <div class="tray-ordr">
-            <button ng-class="classTraySkills" ng-show="traySkills" ng-click="changeTraySkills()" class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="assets/win-icons/skillsico.png"><span class="tray-text" title="Skills">Skills</span></button>
-         </div>
-         <div class="tray-ordr">
-            <button  ng-class="classTrayTools" ng-show="trayTools" ng-click="changeTrayTools()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/toolsico.png"><span class="tray-text" title="Tools">Tools</span></button>
-         </div>
-          
-          <div class="tray-ordr">
-            <button  ng-class="classTrayEducation" ng-show="trayEducation" ng-click="changeTrayEducation()"  class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/eduico.png"><span class="tray-text" title="Education">Education</span></button>
-         </div>
-          <div class="tray-ordr">
-            <button  ng-class="classTrayExperiences" ng-show="trayExperiences" ng-click="changeTrayExperiences()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/expico.png"><span class="tray-text" title="Experiences">Experiences</span></button>
-         </div>
-          
-          <div class="tray-ordr">
-            <button  ng-class="classTrayLangs" ng-show="trayLangs" ng-click="changeTrayLangs()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/langsico.png"><span class="tray-text" title="Languages">Languages</span></button>
-         </div>
-           <div class="tray-ordr">
-            <button ng-class="classTrayAboutme" ng-show="trayAboutme" ng-click="changeTrayAboutme()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/aboutico.png"><span class="tray-text" title="About Me">About Me</span></button>
+         
+            <button onclick="changeZIndex('window-readme')" ng-class="classTrayReadme" ng-show="trayReadme" ng-click="changeTrayReadme()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/readmeico.png"><span class="tray-text readme-txt" title="readme.txt">Readme.txt</span></button>
+    
+            <button onclick="changeZIndex('window-skills')" ng-class="classTraySkills" ng-show="traySkills" ng-click="changeTraySkills()" class="tray skills-tray depressed" id="mini_window"><img class="icon-mini" src="assets/win-icons/skillsico.png"><span class="tray-text" title="Skills">Skills</span></button>
+   
+            <button  onclick="changeZIndex('window-tools')" ng-class="classTrayTools" ng-show="trayTools" ng-click="changeTrayTools()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/toolsico.png"><span class="tray-text" title="Tools">Tools</span></button>
+
+            <button  onclick="changeZIndex('education-window')" ng-class="classTrayEducation" ng-show="trayEducation" ng-click="changeTrayEducation()"  class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/eduico.png"><span class="tray-text" title="Education">Education</span></button>
+
+            <button  onclick="changeZIndex('window-exp')" ng-class="classTrayExperiences" ng-show="trayExperiences" ng-click="changeTrayExperiences()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/expico.png"><span class="tray-text" title="Experiences">Experiences</span></button>
+
+            <button  onclick="changeZIndex('window-langs')" ng-class="classTrayLangs" ng-show="trayLangs" ng-click="changeTrayLangs()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/langsico.png"><span class="tray-text" title="Languages">Languages</span></button>
+
+            <button onclick="changeZIndex('window-aboutme')" ng-class="classTrayAboutme" ng-show="trayAboutme" ng-click="changeTrayAboutme()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/aboutico.png"><span class="tray-text" title="About Me">About Me</span></button>
          </div>
         
       </div>  

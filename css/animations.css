@@ -26,7 +26,7 @@
 }
 .heart {
     color: red!important;
-    animation: kokoro 2s 1s steps(100) forwards, pulse 1s 4s infinite;
+    animation: kokoro 2s 2s steps(100) forwards, pulse 1s 4s infinite;
     position: absolute;
 }
 #window-readme {
