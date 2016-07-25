@@ -310,7 +310,7 @@ p.who {
 }
 .experiences-window {
     width: 600px;
-    height: 540px;
+    height: 550px;
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
@@ -357,6 +357,15 @@ p.who {
 .experiences-window:focus {
     display: none;
 }
+.pc-template {
+    background: url('../assets/pc-template.png') center no-repeat;
+    background-size: 240px;
+    height: 194px;
+    width:100%;
+    text-align: center;
+    left: 0;
+    margin: auto;
+}
 .text-experiences p {
     padding: 10px 1px -1px 10px;
     text-align: left;
@@ -364,23 +373,20 @@ p.who {
     margin-left: 5px;
 }
 .text-experiences h1 {
-    font-size: 12px;
-    position: absolute;
-    margin-top: -130px!important;
-    margin-left: 212px;
+    font-size: 0.9em;
+    top: 25%;
+    position: relative;
+
+    
 }
 .sucorpi {
-    text-align: center;
-    margin-left: 220px!important;
 }
 .freelancer {
-    margin-left: 215px!important;
+
 }
 .setrans {
-    margin-left: 220px!important;
 }
 .desenvolve {
-    margin-left: 235px!important;
 }
 
 col-experiences-tabs {
@@ -423,9 +429,7 @@ hr.divider {
 .text-experiences {
     margin-top: 0px;
 }
-.pc-template {
-    width: 206px;
-}
+
 .pc-tools {
     float: left;
 }
@@ -619,7 +623,7 @@ hr.divider {
         font-size: 60px!important;
     }
     .social-windowed:hover {
-        font-size: 75px;
+        font-size: 75px!important;
     }
     .social-media-windowed {
         margin-left: 420px;

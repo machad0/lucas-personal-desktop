@@ -860,7 +860,7 @@
         height: 0px;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 55%;
         margin-left: -70px;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -873,7 +873,7 @@
         cursor: pointer;
     }
     #ballWrapper2 {
-        top: 72%;
+        top: 70%;
         position: absolute;
     }
     .smile {
@@ -946,7 +946,7 @@
         display: block;
         width: 200px;
         font-size: 25px;
-        margin: -60px -50px 10px;
+        margin: -90px -50px 10px;
     }
     .speech::after {
         content: '';
@@ -956,8 +956,8 @@
         border-color: #FFFFFF transparent;
         display: block;
         z-index: 1;
-        bottom: -10px;
-        left: -10px;
+
+        left: -30px;
     }
     .speech3 {
         opacity: 0;
@@ -968,9 +968,9 @@
         color: #fff;
         background: #000;
         position: absolute;
-        width: 100px;
+        width: 120px;
         height: 30px;
-        margin: 48px 496px;
+        margin: 48px 485px;
         animation: showspeech2 1s 3s forwards;
         font-size: 25px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
