@@ -297,15 +297,16 @@ p.who {
 .tools-window {
     height: 453px;
     width: 650px;
-    z-index: 1;
     box-sizing: border-box;
     position: absolute;
+    z-index: 1;
 }
 .education-window {
     width: 400px;
     height: 500px;
     box-sizing: border-box;
     position: absolute;
+    z-index: 1;
 }
 .experiences-window {
     width: 600px;
@@ -357,6 +358,9 @@ p.who {
     display: none;
 }
 .text-experiences p {
+    padding: 10px 1px -1px 10px;
+    text-align: left;
+    font-size: 13px;
     margin-left: 5px;
 }
 .text-experiences h1 {
@@ -378,11 +382,7 @@ p.who {
 .desenvolve {
     margin-left: 235px!important;
 }
-.text-experiences p {
-    padding: 10px 1px -1px 10px;
-    text-align: left;
-    font-size: 13px;
-}
+
 col-experiences-tabs {
     margin-left: ;
 }

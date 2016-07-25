@@ -44,7 +44,6 @@ app.directive('templateSkills', ['$document', function($document){
 }]);
 app.directive('templateTools',['$document', function($document){
   return {
-      
      templateUrl: 'templates/tools.html',
   };
 }]);

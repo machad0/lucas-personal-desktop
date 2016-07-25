@@ -1,5 +1,5 @@
-<div class="draggy">
-<div  ng-show="aboutmeMin"  id="window-aboutme" class="window-form-browser window-border" ng-class="classMaxi">
+
+<div ng-show="aboutmeMin"  id="window-aboutme" class="window-form-browser window-border" ng-class="classMaxi">
     <header class="window-header" style="display:block;">
         <img class="window-icon" src="assets/win-icons/aboutico.png">
         <span class="window-title text-form">ABOUT ME</span>
@@ -17,17 +17,7 @@
                 <img class="weblogo" align="center" src="assets/weblogo.gif">
             </div>
             <div id="" class="right-corner"><img id="head" class="ich" src="assets/me.png"></div>
-            <div style="left-corner">
-  
-                <ul class="social-media">
-                    <li class="fb social"><a href="https://www.facebook.com/lucas.omachado" target="_blank">Facebook</a></li>
-                    <li class="lkdn social"><a href="https://www.linkedin.com/in/lucas-machado-de-azeredo-figueira-8575b9123" target="_blank">LinkedIn</a></li>
-                    <li class="cv social">Curriculum Vitae</li>
-                    <li class="bhance social">Behance</li>
-                    <li class="github social"><a href="https://github.com/machad0" target="_blank">GitHub</a></li>
-                    <li class="flkr social"><a href="https://www.flickr.com/photos/lucas-machado/" target="_blank">Flickr</a></li>
-                </ul>
-            </div>
+           
             <div class="body-browser">
 
 
@@ -49,53 +39,21 @@
             </div>
         </div>
 
-
+        <div style="left-corner">
+                  <ul class="social-media">
+                    <li class="fb social"><a href="https://www.facebook.com/lucas.omachado" target="_blank">Facebook</a></li>
+                    <li class="lkdn social"><a href="https://www.linkedin.com/in/lucas-machado-de-azeredo-figueira-8575b9123" target="_blank">LinkedIn</a></li>
+                    <li class="cv social">Curriculum Vitae</li>
+                    <li class="bhance social">Behance</li>
+                    <li class="github social"><a href="https://github.com/machad0" target="_blank">GitHub</a></li>
+                    <li class="flkr social"><a href="https://www.flickr.com/photos/lucas-machado/" target="_blank">Flickr</a></li>
+                </ul>
+            </div>
 
 
     </section>
-            </div>
+
     <script>
 
-        $("#ballWrapper").click(function() {
-            $('.box1').toggleClass('show-box');
-            $('.ball1').toggleClass('hideball');
-            $('.ball2').toggleClass('showball');
-            $('.speech2').toggleClass('showspeech2');
-            $('.speech3').toggleClass('showspeech3');
-        });
-        $("#ball2").click(function() {
-            $('.box2').toggleClass('show-box');
-            $('.ball2').toggleClass('hideball2');
-        });
-
-        $("#maxbtn").click(function() {
-            $('.ich').toggleClass('dragme');
-            $('.body-browser').toggleClass('windowed-browser');
-            $('.box1').toggleClass('windowed-boxes');
-            $('.box2').toggleClass('windowed-boxes');
-            $('.social').toggleClass('social-windowed');
-            $('.social-media').toggleClass('social-media-windowed');
-            $('.right-corner').toggleClass('right-corner-windowed');
-            $(".dragme").draggable({
-                revert: function(dropped) {
-                    var $draggable = $(this),
-                        hasBeenDroppedBefore = $draggable.data('hasBeenDropped'),
-                        wasJustDropped = dropped && dropped[0].id == "droppable";
-                    if (wasJustDropped) {
-                        return false;
-                    } else {
-                        if (hasBeenDroppedBefore) {
-                            $draggable.animate({
-                                top: 0,
-                                left: 0
-                            }, 'slow');
-                            return false;
-                        } else {
-                            return true;
-                        }
-                    }
-                }
-            });
-
-        });
+    $("#ball").click(function(){$(".box1").toggleClass("show-box"),$(".ball1").toggleClass("hideball"),$(".ball2").toggleClass("showball"),$(".speech2").toggleClass("showspeech2"),$(".speech3").toggleClass("showspeech3")}),$("#ball2").click(function(){$(".box2").toggleClass("show-box"),$(".ball2").toggleClass("hideball2")}),$("#maxbtn").click(function(){$(".body-browser").toggleClass("windowed-browser"),$(".box1").toggleClass("windowed-boxes"),$(".box2").toggleClass("windowed-boxes"),$(".social").toggleClass("social-windowed"),$(".social-media").toggleClass("social-media-windowed"),$(".right-corner").toggleClass("right-corner-windowed")});
     </script>

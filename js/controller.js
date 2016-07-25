@@ -118,6 +118,7 @@ app.controller('ControllerAboutme', ['$scope', function($scope) {
         } else {
             $scope.classMaxi = "unmax-win";
         }
+        
     };
 
     $scope.aboutWindow = false;
