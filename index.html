@@ -15,11 +15,12 @@
       <script type="text/javascript" src="js/guru.js"></script>
       <script type="text/javascript" src="js/desktop.js"></script>
  
-    <script>
+    <script type="text/javascript">
     superZIndex = 10;
     function changeZIndex(id){e = document.getElementById(id);e.style.zIndex = superZIndex += 1;}
+    function startTime(){var e=new Date,t=e.getHours(),n=e.getMinutes(),c=e.getSeconds();n=checkTime(n),c=checkTime(c),document.getElementById("watch").innerHTML=t+":"+n+":"+c;setTimeout(startTime,500)}function checkTime(e){return 10>e&&(e="0"+e),e}    
     </script>
-       
+
        <title>Lucas Desktop</title>
        
       <link rel="icon" href="assets/guruicon.png" type="image/png" sizes="16x16">
@@ -32,7 +33,7 @@
       <link rel="stylesheet" type="text/css" href="css/desktop.css">
       <link rel="stylesheet" type="text/css" href='css/animations.css'>
    </head>
-   <body md-theme="none" >
+   <body onload="startTime()">
       <div id="dsktp-icons">
 
          <div tabindex="0"  id="readme" class="tab_icon icon-title" ng-controller="ControllerReadme">
@@ -164,7 +165,10 @@
 
             <button onclick="changeZIndex('window-aboutme')" ng-class="classTrayAboutme" ng-show="trayAboutme" ng-click="changeTrayAboutme()" class="tray" id="mini_window"><img class="icon-mini" src="assets/win-icons/aboutico.png"><span class="tray-text" title="About Me">About Me</span></button>
          </div>
-        
+          
+        <div class="watch-tray">
+            <div id="watch" class="watch-desktop depressed"></div>
+        </div>   
       </div>  
    </footer>
 </html>

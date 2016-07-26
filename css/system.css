@@ -48,6 +48,12 @@ input.toggle ~ div.content {
 input.toggle:checked ~ div.content {
     display: block;
 }
+div.watch-tray{
+    display: inline-block;
+    float: right;
+    margin: 4px;
+    position: relative;
+}
 .start-left-corner {
     background-color: grey;
     width: 15%;

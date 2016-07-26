@@ -310,7 +310,7 @@ p.who {
 }
 .experiences-window {
     width: 600px;
-    height: 550px;
+    height: 560px;
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
@@ -376,19 +376,7 @@ p.who {
     font-size: 0.9em;
     top: 25%;
     position: relative;
-
-    
 }
-.sucorpi {
-}
-.freelancer {
-
-}
-.setrans {
-}
-.desenvolve {
-}
-
 col-experiences-tabs {
     margin-left: ;
 }
@@ -437,12 +425,17 @@ hr.divider {
     margin-top: 0px;
     text-align: center;
 }
-.tools-list {
-    margin-top: 0px;
+.tools-list{
     margin-left: 130px;
+    margin-top: -8px
+}
+.tools-list li {
+    margin: 15px 0px;
     font-size: 16px;
     list-style: none;
     text-align: left;
+
+
 }
 .skills-active,
 .readme-active {
