@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'FixedsysExcelsior301Regular';
-    src: url('assets/fonts/FSEX300.woff') format('woff'), url('assets/fonts/FSEX300.ttf') format('truetype');
-}
 .window-header {
     background-color: #010081;
     width: 100%;
