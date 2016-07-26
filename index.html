@@ -2,9 +2,18 @@
 <html ng-app="CV" ng-controller="ControllerDesktop">
    <head>
       <meta charset="UTF-8">
+      <meta http-equiv="Content-Language" content="en_US" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lucas Desktop</title>
       <meta name="description" content="Lucas Figueira Personal Desktop! Web and Mobile Dev">
       <meta name="keywords" content="HTML,CSS,JavaScript">
       <meta name="author" content="Lucas Figueira">
+      <meta property="og:title" content="Lucas Personal Desktop!">
+      <meta property="og:description" content="Website based on an Win95 desktop environment and other cool stuff">
+      <meta property="og:image" content="thumb.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="700"> 
+      <meta property="og:image:height" content="338"> 
       <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
       <script type="text/javascript" src="js/angular.min.js"></script>
       <script type="text/javascript" src="js/angular-animate.js"></script>
@@ -21,7 +30,7 @@
     function startTime(){var e=new Date,t=e.getHours(),n=e.getMinutes(),c=e.getSeconds();n=checkTime(n),c=checkTime(c),document.getElementById("watch").innerHTML=t+":"+n+":"+c;setTimeout(startTime,500)}function checkTime(e){return 10>e&&(e="0"+e),e}    
     </script>
 
-       <title>Lucas Desktop</title>
+
        
       <link rel="icon" href="assets/guruicon.png" type="image/png" sizes="16x16">
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />
@@ -33,6 +42,50 @@
       <link rel="stylesheet" type="text/css" href="css/desktop.css">
       <link rel="stylesheet" type="text/css" href='css/animations.css'>
    </head>
+    
+    <!--
+                       .-""""""""""""""""""""""""""""""""""""""""""""""
+                        |                                     ..-.-.--.-
+          _________     |    .-----------------------------------------.
+       .-"         "-.  |    |:""""""""""""""""""""""""""""""""""""""":|
+       |-------------|  |    ||                                       ||
+       |%%%%%%%%%%%%%|  |    ||                                       ||
+       |%%%%%%%%%%%%%|  |    ||                                       ||
+       |%%%%%%%%%%%%%|  |    ||                                       ||
+       |%%%%%%%%%%%%%|  |    ||                                       ||
+       |%%%%%%%%%%%%%|  |    ||        It's Never Safe to             ||
+       |%%%%%%%%%%%%%|  |    ||          Turn Off Your Computer       ||
+       |-------------|-.|    ||                                       ||
+       |() Power (_) |  |    ||                                       ||
+-------'-------------'-.|    ||                                       ||
+              |    []o ||    ||                                       ||
+              |        ||    ||                                       ||
+              |[V](_)o ||    ||                                       ||
+              |        ||    ||_______________________________________||
+              | @ (_)o ||  .-'-----------------------------------------'
+              |        ||  |/\ Advn |                                 |
+--------------|        ||  '--------'                                 |
+------------|"|".      |'-______________________________________________
+||    || __ | | |      |  |     '--' '--' '--' '--' '--' '--' '--' '--'
+||    ||   \| | |      |  '-____________________________________________
+ ___'---====| | |      |                |                    |
+|   |----.  | |_|______|           ______\__________________/_____
+'-__[    ]""|_|                    |                             |
+------------------------------------------------------------------------
+""""""""""""""""||""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                ||        _____
+                ||     __|-----|_______
+                ||  .-+----------------+-----------------------------.
+                ||  |.----.""""""""""""""""""""""""|"|"""CD""""|"|.-.|
+_________       ||  || /\ | [8125]     [==========]| '---------' ||i||
+----------.     ||  ||Advn|    mga      o      ==  | oo-- [>][o] |'-'|
+""""""""""'.    ||  |'----'                        |"""""""""""""|---|
+"""""".-""""""""""""""""""""""""""""""""""""""""-"""""""""-""""-.|___|
+        -->
+    
+    
+    
+    
    <body onload="startTime()">
       <div id="dsktp-icons">
 
