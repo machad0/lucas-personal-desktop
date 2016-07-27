@@ -257,6 +257,9 @@ p.who {
 .dragme {
     pointer-events: all;
 }
+.drag:active{
+    z-index: 300!important;
+}
 .me {
     top: 65%;
     left: -1%;
