@@ -853,12 +853,12 @@ hr.divider {
         left: 220px;
     }
     .speech-lucas p {
-        font-size: 18px;
+        font-size: 1.1em;
     }
     p.who {
         position: absolute;
-        margin: 188px 90px;
-        font-size: 11px;
+        margin: 205px 90px;
+        font-size: 0.8em;
     }
     img.fogo {
         position: absolute;
