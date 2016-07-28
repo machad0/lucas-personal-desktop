@@ -843,14 +843,14 @@ hr.divider {
         min-width: 250px!important;
     }
     .speech-lucas {
-        width: 270px;
-        height: 270px;
-        left: 25px;
+        width: 280px;
+        height: 275px;
+        left: 15px;
         top: 0px;
     }
     .speech-lucas:after {
         bottom: 30px;
-        left: 200px;
+        left: 220px;
     }
     .speech-lucas p {
         font-size: 18px;
