@@ -1,97 +1,93 @@
 <div ng-show="experiencesMin" id="window-exp" class="experiences-window window-border drag">
-    <header class="window-header" style="display:block;">
-        <img class="window-icon" src="assets/win-icons/expico.png">
-        <span class="window-title text-form">EXPERIENCES</span>
-        <div class="action_btn">
-            <button ng-click="miniExperiences()" class="form_btn mini-win"></button>
-            <button ng-click="closeme();closeTrayExperiences()" class="form_btn close-win"></button>
-        </div>
+   <header class="window-header" style="display:block;">
+      <img class="window-icon" src="assets/win-icons/expico.png">
+      <span class="window-title text-form">EXPERIENCES</span>
+      <div class="action_btn">
+         <button ng-click="miniExperiences()" class="form_btn mini-win"></button>
+         <button ng-click="closeme();closeTrayExperiences()" class="form_btn close-win"></button>
+      </div>
+   </header>
+   <div class="col-experiences-tabs">
+      <ul class="nav nav-stacked">
+         <li ng-class="{ active: isSet(1) }">
+            <a href ng-click="setTab(1)">Lab21k</a>
+         </li>
+         <li ng-class="{ active: isSet(2) }">
+            <a href ng-click="setTab(2)">Sucorpi</a>
+         </li>
+         <li ng-class="{ active: isSet(3) }">
+            <a href ng-click="setTab(3)">Freelancer</a>
+         </li>
+         <li ng-class="{ active: isSet(4) }">
+            <a href ng-click="setTab(4)">Desenvolve!</a>
+         </li>
+         <li ng-class="{ active: isSet(5) }">
+            <a href ng-click="setTab(5)">SETRANS</a>
+         </li>
+      </ul>
+   </div>
+   <div class="border-deep">
+      <section class="folder-body">
+         <div class="col-experiences-body">
+            <div class="text-experiences">
+             
+                 <div class="border-exp" ng-show="isSet(1)">
+                  <br>
+                  <hr class="divider">
+                  <div class="pc-template" >
+                     <h1 class="21k"><a href="http://www.lab21k.com.br/">Lab21k</a><br>Software Engineer<br>August, 2016 - Nowadays</h1>
+                  </div>
+                  <p>21k develops solutions for companies seeking to create a new dynamic for your products. Developing systems, websites, apps, and Internet of Things products</p>
+                  <p>Currently working as a software engineer - frontend and backend - on a huge system used by Rio de Janeiro operations center. Using technologies such as AngularJS, Node.js, Sass, grunt, Postgree and more.</p>
+               </div>
+                  <div class="border-exp" ng-show="isSet(2)">
+                  <br>
+                  <hr class="divider">
+                  <div class="pc-template" >
+                     <h1 class="sucorpi">Sucorpi – <a href="http://eupossoisso.com" target="_blank">eupossoisso.com</a><br>Web and Mobile Dev.<br>March, 2015 - July, 2016</h1>
+                  </div>
+                  <p>Startup that aims at improving the diet and lifestyle of people with dietary restrictions, posting recipes, hints and articles. Responsible for the digital marketing administration campaign for the Digital Congress of Nutrition and Food Allergies – Eu Posso Isso (june 2015), a webnar with 33 speakers from all over the country, like experts from the restrictive feeding area, doctors, food engineers, nutritionists and even influential people such as an actress telling her experiences about raising a celiac son, and also a triathlete that suffers from the same problem. The webnar was broadcasted by the onlinemeetingnow tool, reaching approximately 24,000 subscribers.</p>
+                  <p>Nowadays working with web development – front-end and back-end –, developing the requirements engineering of a mobile application, also monitoring and creating e-marketing campaings. Experience with tools like GetResponse, Aweber, Google Analytics and Facebook Graphs.</p>
+                  <p>As a web developer, the work consists on the development of WordPress templates, plugins, pages and theme customization. - using PHP/JavaScript/HTML/CSS -. In resume, responsible for all customization and administration of the website – http://eupossoisso.com –, including the SEO and the Infrastructure operations using Amazon Web Services.</p>
+                  <p>Working from home, using Trello for tasks organization and SourceTree/bitbucket for versioning.</p>
+               </div>
 
-
-    </header>
-
-    <div class="col-experiences-tabs">
-        <ul class="nav nav-stacked">
-            <li ng-class="{ active: isSet(1) }">
-                <a href ng-click="setTab(1)">Sucorpi</a>
-            </li>
-            <li ng-class="{ active: isSet(2) }">
-                <a href ng-click="setTab(2)">Freelancer</a>
-            </li>
-            <li ng-class="{ active: isSet(3) }">
-                <a href ng-click="setTab(3)">Desenvolve!</a>
-            </li>
-            <li ng-class="{ active: isSet(4) }">
-                <a href ng-click="setTab(4)">SETRANS</a>
-            </li>
-        </ul>
-
-    </div>
-    <div class="border-deep">
-        <section class="folder-body">
-
-            <div class="col-experiences-body">
-                <div class="text-experiences">
-                    <div class="border-exp" ng-show="isSet(1)">
-                        <br>
-                        <hr class="divider">
-                        <div class="pc-template" >
-                        <h1 class="sucorpi">Sucorpi – <a href="http://eupossoisso.com">eupossoisso.com</a><br>Web and Mobile Dev.<br>
-                March, 2015 - July, 2016</h1>  
-                        </div>
-
-
-                        <p>Startup that aims at improving the diet and lifestyle of people with dietary restrictions, posting recipes, hints and articles. Responsible for the digital marketing administration campaign for the Digital Congress of Nutrition and Food Allergies – Eu Posso Isso (june 2015), a webnar with 33 speakers from all over the country, like experts from the restrictive feeding area, doctors, food engineers, nutritionists and even influential people such as an actress telling her experiences about raising a celiac son, and also a triathlete that suffers from the same problem. The webnar was broadcasted by the onlinemeetingnow tool, reaching approximately 24,000 subscribers.</p>
-
-                        <p>Nowadays working with web development – front-end and back-end –, developing the requirements engineering of a mobile application, also monitoring and creating e-marketing campaings. Experience with tools like GetResponse, Aweber, Google Analytics and Facebook Graphs.</p>
-
-                        <p>As a web developer, the work consists on the development of WordPress templates, plugins, pages and theme customization. - using PHP/JavaScript/HTML/CSS -. In resume, responsible for all customization and administration of the website – http://eupossoisso.com –, including the SEO and the Infrastructure operations using Amazon Web Services.</p>
-
-                        <p>Working from home, using Trello for tasks organization and SourceTree/bitbucket for versioning.</p>
-                    </div>
-
-                    <div ng-show="isSet(2)">
-                        <br>
-                        <hr class="divider">
-                        <div class="pc-template"><h1 class="freelancer">Freelancer Dev.<br>IOS/Android App for a<br>Start-up based in England<br> July, 2016 - November, 2016</h1></div>
-                        
-                        <p>Prototype under development, including the App requirements engineering.</p>
-                        <p>An app for a recently founded english startup. The software is being developed using the ApacheCordova/Ionic, an cross platform mobile development framework.</p>
-                        <p>Respecting the intellectualproperty of the xxx company, the explicit content of the application can’t be revealed until theprototype launch date. What can be said is that it is a health software of collaborative nature. Therefore, it depends on a large data processing, so will be used an NoSQL database, MongoDB and a DigitalOcean server for testing.</p>
-                    </div>
-
-                    <div ng-show="isSet(3)">
-                        <br>
-                        <hr class="divider">
-                        <div class="pc-template"> 
-                            <h1 class="desenvolve">Desenvolve!<br>Web Dev. Startup<br>Cofounder and Dev. <br>Jan, 2013 - Feb, 2015<br></h1>
-                        </div>
-
-                        
-                        <p>Startup based on internet platform development, focused on user experience and application performance. At nearly 2015, during 8 months, (march – october) in partnership with the agency Be! Interactive, operating in the market for over 20 years along with 10-people crew, - including developers, designers and project managers – web sites were developed for international sporting events, for the event Universia Rio 2014, and a few CMS plugins – such as Wordpress and Drupal – for partners companies of Be! Interactive.</p>
-                        <p>Acting specially as web developer – front-end and back-end -, using Agile methodology and Scrum frameworks.</p>
-                        <p>Responsible for the configuration of the droplets used by the startup, including DigitalOcean and AWS. Also a former collaborator on Be! Interactive development team of Internet of Things, using Raspberrypie, Makey Makey and Arduino.</p>
-
-                    </div>
-                    <div ng-show="isSet(4)">
-                        <br>
-                        <hr class="divider">
-                        <div class="pc-template"> 
-                            <h1 class="setrans">Transportation Department<br>of Rio de Janeiro<br>JAVA/VB DEV.<br>June, 2012 - July, 2013</h1>                           </div>
-
-                       
-                        <p>Department of Transportation of Rio de Janeiro, responsible for logistics and public state transport management.</p>
-                        <p>Acting as developer, creating softwares for the company's internal management – using Java - and maintenance/optimization of systems already implemented in the company, mostly written on Visual Basic.</p>
-                
-
-                    </div>
-                </div>
+               <div ng-show="isSet(3)">
+                  <br>
+                  <hr class="divider">
+                  <div class="pc-template">
+                     <h1 class="freelancer">Freelancer Dev.<br>IOS/Android App for a<br>Start-up based in England<br> July, 2016 - November, 2016</h1>
+                  </div>
+                  <p>Prototype under development, including the App requirements engineering.</p>
+                  <p>An app for a recently founded english startup. The software is being developed using the ApacheCordova/Ionic, an cross platform mobile development framework.</p>
+                  <p>Respecting the intellectualproperty of the xxx company, the explicit content of the application can’t be revealed until theprototype launch date. What can be said is that it is a health software of collaborative nature. Therefore, it depends on a large data processing, so will be used an NoSQL database, MongoDB and a DigitalOcean server for testing.</p>
+               </div>
+               <div ng-show="isSet(4)">
+                  <br>
+                  <hr class="divider">
+                  <div class="pc-template">
+                     <h1 class="desenvolve">Desenvolve!<br>Web Dev. Startup<br>Cofounder and Dev. <br>Jan, 2013 - Feb, 2015<br></h1>
+                  </div>
+                  <p>Startup based on internet platform development, focused on user experience and application performance. At nearly 2015, during 8 months, (march – october) in partnership with the agency Be! Interactive, operating in the market for over 20 years along with 10-people crew, - including developers, designers and project managers – web sites were developed for international sporting events, for the event Universia Rio 2014, and a few CMS plugins – such as Wordpress and Drupal – for partners companies of Be! Interactive.</p>
+                  <p>Acting specially as web developer – front-end and back-end -, using Agile methodology and Scrum frameworks.</p>
+                  <p>Responsible for the configuration of the droplets used by the startup, including DigitalOcean and AWS. Also a former collaborator on Be! Interactive development team of Internet of Things, using Raspberrypie, Makey Makey and Arduino.</p>
+               </div>
+               <div ng-show="isSet(5)">
+                  <br>
+                  <hr class="divider">
+                  <div class="pc-template">
+                     <h1 class="setrans">Transportation Department<br>of Rio de Janeiro<br>JAVA/VB DEV.<br>June, 2012 - July, 2013</h1>
+                  </div>
+                  <p>Department of Transportation of Rio de Janeiro, responsible for logistics and public state transport management.</p>
+                  <p>Acting as developer, creating softwares for the company's internal management – using Java - and maintenance/optimization of systems already implemented in the company, mostly written on Visual Basic.</p>
+               </div>
             </div>
-        </section>
-    </div>
+         </div>
+      </section>
+   </div>
 </div>
 <script>
-    jQuery('#window-exp').click(function() {
-        jQuery(this).toggleClass('active');
-    });
+   jQuery('#window-exp').click(function() {
+       jQuery(this).toggleClass('active');
+   });
 </script>

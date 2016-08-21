@@ -309,7 +309,7 @@ p.who {
 }
 .experiences-window {
     width: 600px;
-    height: 560px;
+    height: 615px;
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
@@ -368,7 +368,7 @@ p.who {
 .text-experiences p {
     padding: 10px 1px -1px 10px;
     text-align: left;
-    font-size: 13px;
+    font-size: .9em;
     margin-left: 5px;
 }
 .text-experiences h1 {
