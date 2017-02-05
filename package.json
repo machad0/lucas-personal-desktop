@@ -1,0 +1,34 @@
+{
+  "name": "lucas-personal-desktop",
+  "version": "1.0.0",
+  "description": "Personalized CV with win95 aesthetics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machad0/lucas-personal-desktop.git"
+  },
+  "keywords": [
+    "win95",
+    "desktop",
+    "aesthetics",
+    "CV"
+  ],
+  "author": "Lucas Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machad0/lucas-personal-desktop/issues"
+  },
+  "homepage": "https://machad0.github.io/lucas-personal-desktop/",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
