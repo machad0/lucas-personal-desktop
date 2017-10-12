@@ -1,4 +1,4 @@
-** Personal website based on Win 95 desktop environment [DEPRECATED]
+# Personal website based on Win 95 desktop environment [DEPRECATED]
 
 Made with CSS3, HTML5, AngularJS and a few JQuery snippets.
 
